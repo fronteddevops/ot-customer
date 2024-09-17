@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'SATOSHI-LIGHT';
+    src: url('../fonts/SATOSHI-LIGHT.OTF');
+}
+
+@font-face {
+    font-family: 'SATOSHI-REGULAR';
+    src: url('../fonts/SATOSHI-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: 'SATOSHI-MEDIUM';
+    src: url('../fonts/SATOSHI-MEDIUM.OTF');
+}
+
+@font-face {
+    font-family: 'SATOSHI-BOLD';
+    src: url('../fonts/SATOSHI-BOLD.OTF');
+}
+
+@font-face {
+    font-family: 'SATOSHI-BLACK';
+    src: url('../fonts/SATOSHI-BLACK.OTF');
+}
+
+@font-face {
+    font-family: 'LOBSTER-REGULAR';
+    src: url('../fonts/LOBSTER-REGULAR.TTF');
+}
+
+body,
+body * {
+    line-height: normal;
+}
+
+.text-h1 {
+    font-size: 36px !important;
+    color: #1E1142;
+    font-family: 'SATOSHI-BOLD' !important;
+    line-height: 1;
+}
+
+.text-h2 {
+    font-size: 32px !important;
+    color: #1E1142;
+    font-family: 'SATOSHI-BOLD' !important;
+}
+
+.text-h3 {
+    font-size: 28px !important;
+    color: #1E1142;
+    font-family: 'SATOSHI-BOLD' !important;
+
+    &.italic {
+        font-family: 'LOBSTER-REGULAR' !important;
+    }
+
+}
+
+.text-h4 {
+    font-size: 24px !important;
+    color: #1E1142;
+    font-family: 'SATOSHI-MEDIUM' !important;
+
+}
+
+.text-h5 {
+    font-size: 16px !important;
+    color: #1E1142;
+    font-family: 'SATOSHI-MEDIUM' !important;
+
+}
+
+.text-h6 {
+    font-size: 16px !important;
+    font-family: 'SATOSHI-REGULAR' !important;
+
+}
+
+.text-body-1 {
+    color: #1E1142;
+    font-family: 'SATOSHI-REGULAR' !important;
+}
+
+.text-body-2 {
+    color: #1E1142;
+    font-family: 'SATOSHI-LIGHT' !important;
+
+    &.gray {
+        color: #717972;
+    }
+
+    &.medium {
+        font-family: 'SATOSHI-REGULAR' !important;
+    }
+}
+
+.text-body-3 {
+    font-family: 'SATOSHI-LIGHT' !important;
+    letter-spacing: 1px;
+    font-size: 12px;
+
+    &.medium {
+        font-family: 'SATOSHI-REGULAR' !important;
+        letter-spacing: normal;
+    }
+}
+
+.elipsis-para {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.text-expand-toggle {
+    color: #e91e63 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+.text-body-4 {
+    font-family: 'SATOSHI-LIGHT' !important;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.no-drop,
+.v-input--disabled.no-drop,
+.no-drop .v-field--disabled .v-field__input {
+    cursor: no-drop;
+    pointer-events: all;
+}
+
+.underline-none {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.v-container {
+    &.v-container--fluid {
+        max-width: 1274px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .v-container {
+        max-width: 1140px !important;
+    }
+}
+
+.line-height {
+    line-height: normal;
+}
