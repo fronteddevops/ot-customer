@@ -1,5 +1,7 @@
 export default {
-  BASE_URL: 'http://localhost:3003/v1',
+  // BASE_URL: 'http://localhost:3003/v1',
+  BASE_URL: `http://192.168.29.238:3003/v1`,
+  
   //BASE_URL: "https://api.obeytina.com/v1",
   //APP_URL: "https://www.obeytina.com",
   //S3_BUCKET_IMAGE: "ot-dev-media-convert-destination920a3c57-aljc201n45zh",

@@ -40,7 +40,7 @@
 import ConfettiExplosion from "vue-confetti-explosion";
 import services from "@/services";
 import CustomerHeader from "../../Layout/CustomerHeader/CustomerHeader.vue";
-import Constant from "../../../../constant";
+// import Constant from "../../../../constant";
 
 // eslint-disable-next-line
 const Stripenew = '';
