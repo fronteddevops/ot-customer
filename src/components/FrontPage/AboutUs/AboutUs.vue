@@ -6,7 +6,7 @@
         <v-container>
           <div class="width350">
             <h1 class="text-h1">{{ $t("common.AboutUs") }}</h1>
-            <p class="text-body-1">Welcome to Obey Tina</p>
+            <p class="text-body-1">Welcome to Toys Store</p>
           </div>
         </v-container>
       </section>
@@ -25,7 +25,7 @@
             <div class="about-sec2-content">
               <h3 class="text-h3">{{ $t("common.ObeyTine") }}</h3>
               <p class="text-body-2">
-                Welcome to Obey Tina. The World’s leading adult shop and content
+                Welcome to Toys Store. The World’s leading adult shop and content
                 creator platform. We are dedicated to providing a one-stop shop
                 for all your access to the hottest adult
                 stars worldwide. We empower content creators by allowing them to
@@ -33,7 +33,7 @@
                 to benefit the type of content they create. As a customer, you
                 can easily shop for products and content in one convenient
                 ecosystem. Therefore, we strive to make your shopping experience
-                as seamless as possible. The Obey Tina Team will continue
+                as seamless as possible. The Toys Store Team will continue
                 improving access and communication with customers and creators
                 through our platform.
               </p>

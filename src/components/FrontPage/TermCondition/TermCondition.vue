@@ -41,7 +41,7 @@
             <h6 class="text-h6">Governing Law:</h6>
             <p class="text-body-2 mb-2">These terms and conditions shall be governed by and construed in accordance with the laws of the jurisdiction where our platform is located.</p>
             <p class="text-body-2">If you have any questions or concerns about these terms and conditions, please contact us at 
-              <router-link :to="`/`" class="underline-none">contact@obeytina.com</router-link>
+              <router-link :to="`/`" class="underline-none">contact@toysstore.com</router-link>
             </p>
         
         </v-container>

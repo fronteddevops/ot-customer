@@ -72,7 +72,7 @@
         </v-col>
         <v-col xs="12" sm="12" md="6" lg="6" xl="6">
           <div class="product-detail-box">
-            <p class="text-body-2">{{ productDetails?.SubCategory?.name }}</p>
+            <p class="text-body-2">{{ productDetails.SubCategory?.name }}</p>
             <h3
               class="text-h3 mt-3 mb-2"
               style="text-transform: capitalize !important"
@@ -154,10 +154,10 @@
               <div class="d-flex" v-if="colorList.length > 0">
                 <span v-for="(item, index) in colorList" :key="index">
                   <span
-                    v-if="item.value && item.name"
+                    v-if="item.value && item?.name"
                     class="select-color"
-                    @click="selectedColor = item.name"
-                    :class="{ selected: selectedColor == item.name }"
+                    @click="selectedColor = item?.name"
+                    :class="{ selected: selectedColor == item?.name }"
                     :style="`background: ${item.value}`"
                   ></span>
                 </span>
@@ -300,6 +300,9 @@
                     v-if="item.featuredImage"
                     class="profile-view-img"
                     aspect-ratio="1"
+                     crossorigin="anonymous"
+                     @error="handleImageError"
+
                   />
                 </router-link>
                 <span
@@ -325,7 +328,7 @@
                 <div class="product-view-bottom-box">
                   <p class="text-body-2 default">{{ item.title }}</p>
                   <p class="text-body-3">
-                    {{ item.SubCategory.name }}
+                    {{ item.SubCategory?.name }}
                   </p>
                   <div>
                     <span class="price-bold"
@@ -579,11 +582,12 @@ export default {
         const response = await services.Product.GET_PRODUCT_DETAILS(
           id
         );
+        console.log("featuredImage",response)
 
         if (response.data) {
           this.isLoading = false;
           this.productDetails = response.data;
-          this.items[1].title = this.productDetails.Category.name;
+          this.items[1].title = this.productDetails.Category?.name;
           this.items[1].href = `/products?category=${
             this.productDetails.Category.id
           }&subcategory=${this.productDetails.SubCategory.id}${
@@ -605,10 +609,10 @@ export default {
           });
           this.selectedSize = this.sizeList[0];
           this.colorList = JSON.parse(response.data.variantKey).colors;
-          if (this.colorList[0].name == "Black") {
+          if (this.colorList[0]?.name == "Black") {
             this.colorList[0].value = "#000000";
           }
-          this.selectedColor = this.colorList[0].name;
+          this.selectedColor = this.colorList[0]?.name;
           let recentLogProducts = [];
           this.productDetails.addedAt = new Date();
           if (localStorage.getItem("recentLogProducts")) {

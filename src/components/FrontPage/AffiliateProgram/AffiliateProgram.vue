@@ -61,7 +61,7 @@
 
         <p class="text-body-2">
           Another great feature of our platform is the ability to receive
-          sponsored packages from the Obey Tina Team. This allows you to review
+          sponsored packages from the Toys Store Team. This allows you to review
           and feature products on your profile, giving you another way to earn
           income on our platform.
         </p>

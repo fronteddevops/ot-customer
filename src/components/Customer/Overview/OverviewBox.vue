@@ -34,7 +34,7 @@
           <router-link
             :to="`/play/${post.User.id}_${post.User.UserDetail.desiredName}`"
             class="text-h5"
-            >{{ `${post.User.name} ${post.User.lastName}` }}</router-link
+            >{{ `${post.User?.name} ${post.User?.lastName}` }}</router-link
           >
           <div class="d-flex align-center">
             <span class="date-span">{{ dateTime(post.createdAt) }}</span>

@@ -268,7 +268,7 @@ router.afterEach((to, from, next) => {
     } else if(to.name == 'AmbassdorDetail') {
       document.title = to.params.id.split('_')[1];
     } else {
-      document.title = `Obey Tina - ${to.name}`;
+      document.title = `Toys Store - ${to.name}`;
     }
     next()
 });

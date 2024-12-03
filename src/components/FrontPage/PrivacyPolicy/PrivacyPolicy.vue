@@ -29,7 +29,7 @@
             <h6 class="text-h6">Changes to Policy:</h6>
             <p class="text-body-2">We reserve the right to modify this privacy policy at any time. Any changes to this policy will be posted on our platform, and your continued use of our platform after such changes have been posted constitutes your acceptance of the new policy.</p>
             <h6 class="text-h6">Contact Us:</h6>
-            <p class="text-body-2 mb-2">If you have any questions or concerns about this privacy policy or our privacy practices, please contact us at <router-link :to="`/`" class="underline-none">contact@obeytina.com</router-link></p>
+            <p class="text-body-2 mb-2">If you have any questions or concerns about this privacy policy or our privacy practices, please contact us at <router-link :to="`/`" class="underline-none">contact@toysstore.com</router-link></p>
             <p class="text-body-2">We using our platform, you consent to the collection, use, and disclosure of your personal information and any avatars created through our platform in accordance with this privacy policy</p>  
         </v-container>
     </section>

@@ -11,7 +11,7 @@
       </span>
       <router-link to="/">
         <v-img
-          :src="require('../../../assets/images/logo/logo-icon.svg')"
+          :src="require('../../../assets/images/logo/Obetina.jpg')"
           class="logo-icon"
         />
       </router-link>
@@ -45,7 +45,7 @@
                     v-for="item in categoryList"
                     :key="item.id"
                     :value="item.id"
-                    >{{ item.name }}</v-tab
+                    >{{ item?.name }}</v-tab
                   >
                 </v-tabs>
                 <div class="custome-vertical-tabs">
@@ -60,7 +60,7 @@
                             @click="onloadPage"
                             :to="`/products?category=${tab}&subcategory=${item.id}`"
                             class="text-body-2"
-                            >{{ item.name }}</router-link
+                            >{{ item?.name }}</router-link
                           ></v-tab
                         >
                       </v-tabs>
@@ -73,7 +73,7 @@
                               class="text-body-2"
                               v-for="item in subSubCategoryList"
                               :key="item.id"
-                              >{{ item.name }}</router-link
+                              >{{ item?.name }}</router-link
                             >
                           </div>
                         </v-window-item>
@@ -154,7 +154,7 @@
               <router-link
                 :to="`/play/${item.id}_${item.UserDetail.desiredName}`"
                 target="_blank"
-                >{{ item.name + " " + item.lastName }}</router-link
+                >{{ item?.name + " " + item?.lastName }}</router-link
               >
             </li>
           </ul>
@@ -332,7 +332,7 @@
                     :key="item.id"
                   >
                     <v-expansion-panel-title @click="tab = item.id">
-                      {{ item.name }}
+                      {{ item?.name }}
                     </v-expansion-panel-title>
                     <v-expansion-panel-text>
                       <v-expansion-panels class="inner-panels">
@@ -345,7 +345,7 @@
                               @click="onloadPage"
                               :to="`/products?category=${tab}&subcategory=${itemsub.id}`"
                               style="color: #1e1142"
-                              >{{ itemsub.name }}</router-link
+                              >{{ itemsub?.name }}</router-link
                             >
                           </v-expansion-panel-title>
                           <v-expansion-panel-text>
@@ -356,7 +356,7 @@
                                 class="text-body-2"
                                 v-for="itemsubsub in subSubCategoryList"
                                 :key="itemsubsub.id"
-                                >{{ itemsubsub.name }}</router-link
+                                >{{ itemsubsub?.name }}</router-link
                               >
                             </div>
                           </v-expansion-panel-text>
@@ -468,9 +468,9 @@ export default {
     this.accessToken = localStorage.getItem("access_token");
     if (this.accessToken) {
       const userDetail = JSON.parse(localStorage.getItem("user_Details"));
-      this.userName = `${userDetail.name} ${userDetail.lastName}`;
-      this.isChangePassowrd = !userDetail.gLogin;
-    }
+      this.userName = `${userDetail?.name} ${userDetail?.lastName}`;
+      this.isChangePassowrd = !userDetail?.gLogin;
+    }this.userDetail?.gLogin
     this.getCategoryHandler();
     this.getSubCategoryHandler(1);
     if (this.isUserLoggedIn) {

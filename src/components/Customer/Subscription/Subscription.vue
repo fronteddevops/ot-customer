@@ -260,7 +260,7 @@ export default {
   mounted() {
     console.log(this.$route.query.client_secret);
     this.price = this.$route.query.price;
-    this.items[2].title = this.$route.query.name;
+    this.items[2].title = this.$route.query?.name;
     this.items[2].href = `/play/${this.$route.query.id}_${this.$route.query.desiredName}`;
     if (this.$route.query.client_secret) {
       this.paymentHandler(this.$route.query.client_secret);

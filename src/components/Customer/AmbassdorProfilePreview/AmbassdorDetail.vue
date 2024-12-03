@@ -24,8 +24,8 @@
                 />
                 <div class="reltive">
                   <h4 class="text-h4" v-if="ambassadorDetail">
-                    {{ ambassadorDetail.UserDetail.name }}
-                    {{ ambassadorDetail.UserDetail.lastName }}
+                    {{ ambassadorDetail.UserDetail?.name }}
+                    {{ ambassadorDetail.UserDetail?.lastName }}
                   </h4>
                   <span class="text-body-2"
                     >@{{ ambassadorDetail.UserDetail.desiredName }}</span

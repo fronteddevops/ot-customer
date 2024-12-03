@@ -214,9 +214,9 @@
                   cover
                 />
                 <h5 class="text-h5">
-                  {{ item.UserDetail.name }} {{ item.UserDetail.lastName }}
+                  {{ item?.UserDetail?.name }} {{ item?.UserDetail?.lastName }}
                 </h5>
-                <p class="text-body-3">@{{ item.UserDetail.desiredName }}</p>
+                <p class="text-body-3">@{{ item.UserDetail?.desiredName }}</p>
               </div>
             </router-link>
           </div>
@@ -254,7 +254,7 @@ export default {
           href: "",
         },
         {
-          title: "Obey Tina Play",
+          title: "Toys Store",
           disabled: true,
           href: "",
         },

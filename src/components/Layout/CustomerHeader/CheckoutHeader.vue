@@ -3,7 +3,7 @@
         
         <v-toolbar class="ambassador-header headerlarge">    
             <router-link to="/">
-                <v-img :src="require('../../../assets/images/logo/logo-icon.svg')" class="logo-icon" />
+                <v-img :src="require('../../../assets/images/logo/Obetina.jpg')" class="logo-icon" />
             </router-link>
 
             <v-toolbar-items>

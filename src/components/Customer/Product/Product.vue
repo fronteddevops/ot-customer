@@ -52,13 +52,13 @@
                     this.getProductHandler('removeSubSubCategeory');
                   "
                 >
-                  {{ item.name }}
+                  {{ item?.name }}
                 </v-expansion-panel-title>
                 <v-expansion-panel-text>
                   <v-checkbox
                     v-for="(itemsubsub, subindex) in subSubCategoryList"
                     :key="subindex"
-                    :label="itemsubsub.name"
+                    :label="itemsubsub?.name"
                     v-model="subsubcategory"
                     :value="itemsubsub.id"
                     hide-details
@@ -562,7 +562,7 @@ export default {
       let name;
       this.allSubSubCategoryList.map((item) => {
         if (item.id == id) {
-          name = item.name;
+          name = item?.name;
         }
       });
       return name;
@@ -616,7 +616,7 @@ export default {
         const response = await services.Categories.GET_CATEGORY();
         response.data.map((item) => {
           if (item.id == this.category) {
-            this.items[1].title = item.name;
+            this.items[1].title = item?.name;
           }
         });
 

@@ -76,9 +76,9 @@
                   <td>
                     <p class="subscriber-name">
                       {{
-                        item.Subscription.User.name +
+                        item.Subscription.User?.name +
                         " " +
-                        item.Subscription.User.lastName
+                        item.Subscription.User?.lastName
                       }}
                     </p>
                   </td>

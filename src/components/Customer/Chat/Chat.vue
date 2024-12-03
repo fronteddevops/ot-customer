@@ -48,13 +48,13 @@
                       style="background: #ff179c"
                     >
                       <span class="text-h5 white"
-                        >{{ item.UserDetail.name.charAt(0)
-                        }}{{ item.UserDetail.lastName.charAt(0) }}</span
+                        >{{ item.UserDetail?.name.charAt(0)
+                        }}{{ item.UserDetail?.lastName.charAt(0) }}</span
                       >
                     </v-avatar>
                     <div class="relative">
                       <h5 class="text-h5">
-                        {{ item.name }} {{ item.lastName }}
+                        {{ item?.name }} {{ item?.lastName }}
                       </h5>
                       <p class="text-body-3 gray">
                         {{ item?.chats[0]?.text }}

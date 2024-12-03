@@ -10,7 +10,7 @@
       <v-container>
         <h4 class="text-h4">Order Tracking</h4>
         <p class="text-body-2">
-          At Obey Tina, we understand that order tracking is important to our
+          At Toys Store, we understand that order tracking is important to our
           customers. To help you stay informed about the status of your order,
           we offer a convenient order tracking feature. Once you've placed your
           order, you can access your order tracking information from your
@@ -23,7 +23,7 @@
         </p>
 
         <p class="text-body-2">
-          Thank you for choosing Obey Tina for your shopping needs.
+          Thank you for choosing Toys Store for your shopping needs.
         </p>
 
         <!-- <p class="text-body-2">
@@ -35,7 +35,7 @@
         </p> -->
 
         <!-- <h4 class="text-h4">
-          Thank you for choosing Obey Tina for your shopping needs.
+          Thank you for choosing Toys Store for your shopping needs.
         </h4>
         <p class="text-body-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting

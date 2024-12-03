@@ -9,7 +9,7 @@
         <div class="text-center">
           <v-img
             class="logo-icon"
-            :src="require('../../assets/images/logo/logo-icon.svg')"
+            :src="require('../../assets/images/logo/Obetina.jpg')"
           />
           <h3 class="text-h3 italic mb-2">
            Forgot Password

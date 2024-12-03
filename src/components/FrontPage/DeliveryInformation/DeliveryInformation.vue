@@ -10,7 +10,7 @@
       <v-container>
         <h4 class="text-h4">Delivery information</h4>
         <p class="text-body-2">
-          At Obey Tina, we want to make sure that you receive your products in a
+          At Toys Store, we want to make sure that you receive your products in a
           timely and efficient manner. We offer a delivery tracking feature that
           allows you to access your delivery information from your customer
           profile. You can view the status of your order, estimated delivery
@@ -35,7 +35,7 @@
           industry?
         </h4> -->
         <p class="text-body-2">
-          Thank you for choosing Obey Tina for your shopping needs.
+          Thank you for choosing Toys Store for your shopping needs.
         </p>
       </v-container>
     </section>

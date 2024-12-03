@@ -3,7 +3,7 @@
     <div class="left-side">
         <v-form ref="form">  
             <div class="text-center">
-                <v-img class="logo-icon" :src="require('../../assets/images/logo/logo-icon.svg')" />
+                <v-img class="logo-icon" :src="require('../../assets/images/logo/Obetina.jpg')" />
                 <h3 class="text-h3 italic mb-8">{{ $t('onboarding.Updateyourpassword') }}</h3>
             </div>
             

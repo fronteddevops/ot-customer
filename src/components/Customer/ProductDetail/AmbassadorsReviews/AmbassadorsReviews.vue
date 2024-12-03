@@ -62,7 +62,7 @@
           </v-col>
         </v-row>
         <span class="text-body-3 gray mt-2 d-block"
-          >{{ item.User.name + " " + item.User.lastName }} |
+          >{{ item?.User?.name + " " + item?.User?.lastName }} |
           {{ dateTime(item.createdAt) }}</span
         >
       </div>

@@ -22,7 +22,7 @@
           <h4 class="text-h4 mb-2">Sign up for emails</h4>
           <p class="text-body-1 mb-7">
             Yes, I want to receive exclusive email offers and sexy advice from
-            Obey Tina.
+            Toys Store.
           </p>
           <div class="footer-input">
             <v-text-field
@@ -56,7 +56,7 @@
         <v-row>
           <v-col cols="12" sm="12" md="5" lg="5" xl="5">
             <v-img
-              :src="require('../../../assets/images/logo/logo.svg')"
+              :src="require('../../../assets/images/logo/Obetina.jpg')"
               class="footer-logo"
             />
             <p class="text-body-1 mb-6 mt-4">
@@ -64,7 +64,7 @@
             </p>
             <div class="social-row">
               <a
-                href="https://instagram.com/_obeytina?igshid=ZDdkNTZiNTM="
+                href="https://instagram.com/_abc?igshid=ZDdkNTZiNTM="
                 target="_blank"
                 ><v-img
                   :src="
@@ -73,7 +73,7 @@
                   class="social-icon"
               /></a>
               <a
-                href="https://twitter.com/_obeytina?t=n-fO9H--6VmitHw9m7Cprw&s=09"
+                href="https://twitter.com/_abc?t=n-fO9H--6VmitHw9m7Cprw&s=09"
                 target="_blank"
               >
                 <v-img
@@ -83,7 +83,7 @@
                   class="social-icon"
               /></a>
               <a
-                href="https://instagram.com/_obeytina?igshid=ZDdkNTZiNTM="
+                href="https://instagram.com/_abc?igshid=ZDdkNTZiNTM="
                 target="_blank"
               >
                 <v-img
@@ -92,7 +92,7 @@
                   "
                   class="social-icon"
               /></a>
-              <a href="https://www.youtube.com/@obeytina" target="_blank">
+              <a href="https://www.youtube.com/@_abc" target="_blank">
                 <v-img
                   :src="
                     require('../../../assets/images/social/youtube-vector.svg')
@@ -110,7 +110,7 @@
                   :key="index"
                   :to="`/products?category=${category.id}`"
                   class="footer-link"
-                  >{{ category.name }}</router-link
+                  >{{ category?.name }}</router-link
                 >
               </div>
               <div class="footer-link-box">
@@ -147,7 +147,7 @@
         <v-row>
           <v-col cols="12" sm="6" md="6" lg="6" xl="6" class="mobile-center">
             <p class="text-body-1 default mb-0">
-              ©2023 ObeyTina.com. All rights reserved.
+              ©2024 toysstore.com. All rights reserved.
             </p>
           </v-col>
           <v-col

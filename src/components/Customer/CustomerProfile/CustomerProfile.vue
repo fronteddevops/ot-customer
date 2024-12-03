@@ -497,10 +497,10 @@ export default {
         const response = await services.UserDetail.GEt_USER_DETAIL(userId);
         this.userDetail = response.data.UserDetail;
         this.userDetail.gAuth = response.data.gAuth;
-        this.userDetail.gLogin = response.data.gLogin;
+        this.userDetail.gLogin = response?.data?.gLogin;
         if (response) {
-          this.firstName = response.data.UserDetail.name;
-          this.lastName = response.data.UserDetail.lastName;
+          this.firstName = response.data.UserDetail?.name;
+          this.lastName = response.data.UserDetail?.lastName;
           this.profileImage = response.data.UserDetail.profileImage;
           this.email = response.data.UserDetail.email;
           this.countryCode = response.data.UserDetail.countryCode;
@@ -523,7 +523,7 @@ export default {
       // if (this.firstName && this.firstName != this.userDetail.name) {
       data.name = this.firstName;
       // }
-      if (this.lastName && this.lastName != this.userDetail.lastName) {
+      if (this.lastName && this.lastName != this.userDetail?.lastName) {
         data.lastName = this.lastName;
       }
       if (this.countryCode && this.countryCode != this.userDetail.countryCode) {
@@ -574,8 +574,8 @@ export default {
         this.isValid = false;
       }
       if (
-        this.firstName != this.userDetail.name ||
-        this.lastName != this.userDetail.lastName ||
+        this.firstName != this.userDetail?.name ||
+        this.lastName != this.userDetail?.lastName ||
         this.phoneNumber != this.userDetail.phoneNumber ||
         this.profileImage != this.userDetail.profileImage ||
         this.countryCode != this.userDetail.countryCode

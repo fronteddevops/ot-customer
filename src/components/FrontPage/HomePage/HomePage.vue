@@ -36,7 +36,7 @@
       <section class="home-section2">
         <h1 class="text-h1 mb-4 text-center">{{ $t("home.OurFeatures") }}</h1>
         <p class="text-body-2 gray text-center mb-9">
-          Explore both shop and Obey Tina Play
+          Explore both shop and Toys Store Play
         </p>
         <v-row>
           <v-col cols="12" sm="12" md="6" lg="6" xl="6">
@@ -116,7 +116,7 @@
                     cover
                     class="sec3-img"
                   />
-                  <p class="text-body-1 mt-2">{{ category.name }}</p>
+                  <p class="text-body-1 mt-2">{{ category?.name }}</p>
                 </router-link>
               </div>
             </Slide>
@@ -154,7 +154,7 @@
                   class="play-slider-img"
                 />
                 <h5 class="text-h5 default">
-                  {{ item.UserDetail.name }} {{ item.UserDetail.lastName }}
+                  {{ item.UserDetail?.name }} {{ item.UserDetail?.lastName }}
                 </h5>
                 <p class="text-body-3 default">
                   @{{ item.UserDetail.desiredName }}
@@ -398,7 +398,7 @@ export default {
         this.categoryList = response.data.map((item) => {
           return {
             ...item,
-            image: `https://www.obeytina.com/ot-category/${item.name
+            image: `https://www.obeytina.com/ot-category/${item?.name
               .trim()
               .replace(/ /g, "-")
               .toLowerCase()}.jpg`,

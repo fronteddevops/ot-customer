@@ -10,7 +10,7 @@
       <v-container>
         <h4 class="text-h4">Returns and refunds</h4>
         <p class="text-body-2">
-          At Obey Tina, we understand that sometimes you may need to return an
+          At Toys Store, we understand that sometimes you may need to return an
           item. We have a returns policy to ensure that you have a hassle-free
           experience in such situations.
         </p>
@@ -47,7 +47,7 @@
         </p>
 
         <p class="text-body-2">
-          Thank you for choosing Obey Tina for your shopping needs.
+          Thank you for choosing Toys Store for your shopping needs.
         </p>
       </v-container>
     </section>

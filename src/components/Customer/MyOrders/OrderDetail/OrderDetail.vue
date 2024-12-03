@@ -44,7 +44,7 @@
                   {{ selectedProduct?.Product?.title }}
                 </h5>
                 <h6 class="text-h6">
-                  {{ selectedProduct?.Product?.SubCategory.name }}
+                  {{ selectedProduct?.Product?.SubCategory?.name }}
                 </h6>
                 <div class="bottom-flex">
                   <p class="color-qty">

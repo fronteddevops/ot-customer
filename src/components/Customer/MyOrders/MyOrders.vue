@@ -173,7 +173,7 @@
                 <router-link
                   class="text-h6"
                   :to="`/order-detail/${item.orderId}/${item.id}`"
-                  >{{ item.Product.SubCategory.name }}</router-link
+                  >{{ item.Product.SubCategory?.name }}</router-link
                 >
                 <div class="bottom-flex">
                   <p class="color-qty">

@@ -45,14 +45,14 @@
                 :src="require('../../../assets/images/structure/Call.svg')"
                 class="icon24"
               />
-              <p class="text-body-1">1300 CALLTINA</p>
+              <p class="text-body-1">1300 </p>
             </div>
             <div class="d-flex">
               <v-img
                 :src="require('../../../assets/images/structure/Message.svg')"
                 class="icon24"
               />
-              <p class="text-body-1">tina@obeytina.com</p>
+              <p class="text-body-1">toys@store.com</p>
             </div>
             <div class="d-flex">
               <v-img
@@ -60,7 +60,7 @@
                 class="icon24"
               />
               <p class="text-body-1">
-              Tina's World
+              Toys's World
               </p>
             </div>
             <v-divider class="my-7"></v-divider>
