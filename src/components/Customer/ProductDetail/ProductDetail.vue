@@ -32,7 +32,7 @@
             >
               <Slide v-for="(slide, index) in images" :key="index">
                 <div class="carousel__item">
-                  <img :src="`${constImg}${slide}`" />
+                  <img :src="`${constImg}${slide}`" crossorigin="anonymous" />
                 </div>
               </Slide>
               <template #addons>
@@ -61,7 +61,11 @@
             >
               <Slide v-for="(slide, index) in images" :key="index">
                 <div class="carousel__item" @click="slideTo(index - 0)">
-                  <img :src="`${constImg}${slide}`" class="thumb-img" />
+                  <img
+                    :src="`${constImg}${slide}`"
+                    class="thumb-img"
+                    crossorigin="anonymous"
+                  />
                 </div>
               </Slide>
               <template #addons>
@@ -300,9 +304,8 @@
                     v-if="item.featuredImage"
                     class="profile-view-img"
                     aspect-ratio="1"
-                     crossorigin="anonymous"
-                     @error="handleImageError"
-
+                    crossorigin="anonymous"
+                    @error="handleImageError"
                   />
                 </router-link>
                 <span
@@ -379,10 +382,10 @@ import constant from "../../../../constant";
 export default {
   name: "ProductDetailPage",
   metaInfo() {
-        return { 
-            title: "Epiloge - Build your network in your field of interest",
-        }
-    },
+    return {
+      title: "Epiloge - Build your network in your field of interest",
+    };
+  },
   components: {
     CustomerHeader,
     Description,
@@ -577,12 +580,10 @@ export default {
     },
     async getProductDetailHandler() {
       this.isLoading = true;
-      let id = this.$route.params.id.split('_')[0]
+      let id = this.$route.params.id.split("_")[0];
       try {
-        const response = await services.Product.GET_PRODUCT_DETAILS(
-          id
-        );
-        console.log("featuredImage",response)
+        const response = await services.Product.GET_PRODUCT_DETAILS(id);
+        console.log("featuredImage", response.data.images.split(","));
 
         if (response.data) {
           this.isLoading = false;
@@ -597,7 +598,7 @@ export default {
               : ""
           }`;
           this.items[2].title = this.productDetails.title;
-          this.images = JSON.parse(response.data.images);
+          this.images = response.data.images.split(",");
           this.images.unshift(response.data.featuredImage);
           this.isWishlisted = response?.data?.WishLists?.length > 0 ? 1 : 0;
           this.customerReviewList = this.productDetails.ProductReviews;

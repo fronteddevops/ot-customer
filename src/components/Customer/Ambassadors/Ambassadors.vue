@@ -29,7 +29,7 @@
               :src="require('../../../assets/images/structure/sex-icon.svg')"
               class="me-2 p-l-head-icon"
             />
-            <p class="text-body-2">{{ $t("common.Sex") }}</p>
+            <p class="text-body-2">{{ $t("common.Sensual_Secrets") }}</p>
           </div>
           <div class="">
             <v-checkbox
@@ -206,7 +206,9 @@
             v-for="(item, index) in ambassadorsList"
             :key="index"
           >
-            <router-link :to="`/play/${item.id}_${item.UserDetail.desiredName}`">
+            <router-link
+              :to="`/play/${item.id}_${item.UserDetail.desiredName}`"
+            >
               <div class="p-r-prod-box">
                 <v-img
                   :src="`${constImg}${item.UserDetail.profileImage}`"
@@ -384,4 +386,3 @@ export default {
   },
 };
 </script>
-

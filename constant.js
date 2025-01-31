@@ -8,6 +8,6 @@ export default {
   //S3_BUCKET_VIDEO: "ot-dev-media-convert-source71e471f1-q124x5s81xth",
   //REGION: "us-east-1",
   // CLOUDFRONT_DESTINATION: "https://d39rqdu9os3h2h.cloudfront.net/",
-  CLOUDFRONT_DESTINATION: "http://192.168.29.238:3003/v1/uploads/",
+  CLOUDFRONT_DESTINATION: "http://192.168.29.238:3003/uploads/",
   STRIPE_PK:"pk_live_51Jr[p,rrrrrrkpojkojopjojoojmZ1HJRTPwlxRSZCGDUgftufgytufgvhG5MVneD4BlEuuiihplg1K32y1Dt9gp93FilZsrhZcV8ZjORfqRgPmPwkSKnNL7sPwiL900ESVImMN6"
 };

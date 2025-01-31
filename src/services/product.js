@@ -9,6 +9,7 @@ export default {
     return new Promise(async (resolve, reject) => {
       try {
         const response = await Axios.get(constant.BASE_URL + api.Product.GET_PRODUCT(query))
+        console.log(response,"2122")
         resolve(response)
       } catch (err) {
         reject(err)

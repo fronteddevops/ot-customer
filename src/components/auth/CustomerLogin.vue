@@ -281,17 +281,7 @@ export default {
             let cartData = (await localStorage.getItem("cartData"))
               ? JSON.parse(localStorage.getItem("cartData"))
               : null;
-            const responseCart = await services.Product.GET_CART();
-            console.log(responseCart.data.cartDetail);
-            let existingCartData = responseCart.data;
-            let existingCartDetail = [];
-            if (existingCartData.cartDetail && cartData?.cartDetail) {
-              existingCartDetail = existingCartData.cartDetail.data;
-              console.log(existingCartDetail, "existingCartDetail");
-              existingCartDetail.map((item) => {
-                cartData.cartDetail.data.push(item);
-              });
-            }
+         
 
             if (cartData) {
               cartData.cartDetail.data = cartData.cartDetail.data.filter(

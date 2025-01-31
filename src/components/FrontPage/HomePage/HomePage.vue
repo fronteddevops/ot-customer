@@ -101,22 +101,23 @@
           :settings="settingsThirdSlider"
           :breakpoints="breakpointsThirdSlider"
         >
-          <template v-for="(category, index) in categoryList" :key="index">
+          <template v-for="(category, index) in this.productList" :key="index">
             <Slide>
               <div class="sec3-box mb-3">
                 <router-link
-                  :to="`/products?category=${category.id}`"
+                  :to="`/products?category=${category?.Category?.id}`"
                   class="product-view-bottom-box"
                   target="_blank"
                 >
                   <v-img
-                    v-if="category.image"
-                    :src="category.image"
+                    v-if="category.featuredImage"
+                    :src="`${constImg}${category.featuredImage}`"
                     @error="categoryImageErrorHandler(index)"
                     cover
                     class="sec3-img"
+                     crossorigin="anonymous"
                   />
-                  <p class="text-body-1 mt-2">{{ category?.name }}</p>
+                  <p class="text-body-1 mt-2">{{ category?.Category?.name }}</p>
                 </router-link>
               </div>
             </Slide>
@@ -179,7 +180,7 @@
       </div>
     </section>
     <section class="home-section5" v-if="productList.length > 0">
-      <v-container fluid class="lg-px-0">
+      <v-container fluid class="lg-px-0">s
         <h1 class="text-h1 mb-4">{{ $t("home.ExploreProducts") }}</h1>
         <p class="text-body-2 gray mb-7">
           Shop now for all your sexual wellness needs. Play away
@@ -380,6 +381,8 @@ export default {
     async getProductHandler() {
       try {
         const response = await services.Product.GET_PRODUCT();
+      
+              console.log(response.data,"response-product11")
         this.productList = response.data.map((item) => {
           if (item.WishLists.length > 0) {
             item.isWishlisted = 0;
@@ -395,6 +398,7 @@ export default {
     async getCategoryHandler() {
       try {
         const response = await services.Categories.GET_CATEGORY();
+        console.log(response,'response111111')
         this.categoryList = response.data.map((item) => {
           return {
             ...item,
@@ -403,7 +407,9 @@ export default {
               .replace(/ /g, "-")
               .toLowerCase()}.jpg`,
           };
+          
         });
+    
       } catch (err) {
         console.log(err);
       }

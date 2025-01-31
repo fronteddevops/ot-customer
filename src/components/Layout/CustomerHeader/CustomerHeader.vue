@@ -60,7 +60,8 @@
                             @click="onloadPage"
                             :to="`/products?category=${tab}&subcategory=${item.id}`"
                             class="text-body-2"
-                            >{{ item?.name }}</router-link
+                            >{{ item?.name }} 
+                            </router-link
                           ></v-tab
                         >
                       </v-tabs>
@@ -659,6 +660,7 @@ export default {
           await services.SubSubCategory.GET_SUB_SUB_CATEGORY_BY_SUB_CATEGORY(
             id
           );
+          console.log(response,"sub-cate")
         this.subSubCategoryList = response.data;
       } catch (err) {
         console.log(err);

@@ -950,7 +950,7 @@
 .ambassadors-wrapper {
     &::before {
         content: '';
-        background-image: url('../images/structure/water-mark.png');
+        // background-image: url('../images/structure/water-mark.png');
         width: 782px;
         height: 268px;
         position: absolute;
@@ -2392,7 +2392,7 @@
     height: 547px;
     border-radius: 20px;
     position: relative;
-    background: url('../images/structure/home-banner1.png') no-repeat;
+    background: url('https://as2.ftcdn.net/v2/jpg/09/88/65/13/1000_F_988651328_m6E7pZJa4Kdsjxe3olIZAhLZZLjcZ0vp.jpg') no-repeat;
     background-position: right;
     background-size: cover;
     padding: 116px 78px;

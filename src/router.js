@@ -133,7 +133,7 @@ const routes = [
   {
     name: "Products",
     path: "/products",
-    component: Product,
+    component: Product
   },
   {
     name: "Product Detail Page",

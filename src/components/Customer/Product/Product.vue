@@ -286,6 +286,7 @@
                   v-if="item.featuredImage"
                   class="profile-view-img"
                   aspect-ratio="1"
+                  crossorigin="anonymous"
                 />
               </router-link>
               <span
@@ -321,7 +322,7 @@
                 <span
                   v-if="item.discountedPrice != item.price"
                   class="price-underline"
-                  >{{ $t("common.USD") }} {{ item.price }}</span
+                  >{{  $t("common.USD")  }} {{ item.price }}</span
                 >
                 <span
                   v-if="item.discountedPrice != item.price"
@@ -376,6 +377,7 @@ export default {
       chip: true,
       panel: "[0, 0]",
       constImg: constant.CLOUDFRONT_DESTINATION,
+
       showProducts: false,
       items: [
         {
@@ -407,6 +409,7 @@ export default {
       selectedCheckPrice: [""],
       selectedCheckRating: [""],
       allSubSubCategoryList: [],
+      productImage: "",
       ratingSelected: 0,
       priceTo: 0,
       priceFrom: 0,
@@ -422,6 +425,7 @@ export default {
   //   created() {
   //   this.loadMore();
   // },
+
   mounted() {
     if (this.$route.query.category) {
       this.category = this.$route.query.category;
@@ -507,7 +511,6 @@ export default {
     },
     rating: {
       handler(val) {
-        console.log(val, "rating");
         if (val.length > 0) {
           this.ratingSelected = Math.min(...val);
         } else {
@@ -524,7 +527,7 @@ export default {
     getSubCategoryNameHandler(id) {
       if (this.subCategoryList.length > 0) {
         let name;
-        console.log(this.subCategoryList);
+        console.log(this.subCategoryList, 111);
         this.subCategoryList.map((item) => {
           if (item.id == id) {
             name = item.name;
@@ -548,10 +551,12 @@ export default {
     loadMore() {
       console.log("llllllllllllllll");
     },
+
     async getAllSubSubCategoryList() {
       this.isLoading = true;
       try {
         const response = await services.SubSubCategory.GET_SUB_SUB_CATEGORY();
+        console.log(response);
         this.allSubSubCategoryList = response.data;
       } catch (err) {
         this.isLoading = false;
@@ -630,6 +635,7 @@ export default {
       try {
         const response =
           await services.SubCategory.GET_SUB_CATEGORY_BY_CATEGORY(id);
+        console.log(response, "response@111");
         this.subCategoryList = response.data;
       } catch (err) {
         this.isLoading = false;
@@ -651,6 +657,7 @@ export default {
     },
     async getUploadedFile(fileName) {
       const response = await services.Auth.GET_IMAGE(fileName);
+
       let fileURL = response.data.url;
       // console.log(response.data.url, "responseresponse");
       return fileURL;
@@ -707,7 +714,11 @@ export default {
         let query = new URLSearchParams(filterData).toString();
 
         const response = await services.Product.GET_PRODUCT(query);
+        console.log(response, "response---->");
         this.productList = response.data.map((item) => {
+          console.log(this.productList, "response");
+          this.productImage = item.images.split(",");
+
           this.isLoading = false;
           if (item.WishLists.length > 0) {
             item.isWishlisted = 0;
