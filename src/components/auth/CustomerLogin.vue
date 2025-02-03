@@ -311,6 +311,7 @@ export default {
                 this.$router.go(-1);
               } else {
                 this.$router.push("/profile");
+                
               }
               localStorage.removeItem("cartData");
 

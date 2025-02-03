@@ -5,9 +5,9 @@
       <section class="home-banner">
         <div class="width350">
           <h1 class="text-h1 mb-5">
-            {{ $t("home.Where") }}
-            <span class="pink">{{ $t("home.fantasy") }}</span>
-            {{ $t("home.meetsReality") }}
+            {{ $t("home.Toys") }}
+            <span class="pink">{{ $t("home.Spark") }}</span>
+            {{ $t("home.Imagination") }}
           </h1>
           <p class="text-body-2 mb-12">
             <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.-->
@@ -55,7 +55,7 @@
               <div class="img-box">
                 <v-img
                   :src="
-                    require('../../../assets/images/structure/home-card1.jpg')
+                    require('../../../assets/images/structure/toys_store.jpg')
                   "
                   class="card-img"
                 />
@@ -67,7 +67,7 @@
               <div class="img-box">
                 <v-img
                   :src="
-                    require('../../../assets/images/structure/home-card2.jpg')
+                    require('../../../assets/images/structure/toys_product.jpg')
                   "
                   class="card-img"
                 />
@@ -100,6 +100,7 @@
           class="sec3-row"
           :settings="settingsThirdSlider"
           :breakpoints="breakpointsThirdSlider"
+        
         >
           <template v-for="(category, index) in this.productList" :key="index">
             <Slide>
@@ -115,7 +116,7 @@
                     @error="categoryImageErrorHandler(index)"
                     cover
                     class="sec3-img"
-                     crossorigin="anonymous"
+                    crossorigin="anonymous"
                   />
                   <p class="text-body-1 mt-2">{{ category?.Category?.name }}</p>
                 </router-link>
@@ -180,7 +181,8 @@
       </div>
     </section>
     <section class="home-section5" v-if="productList.length > 0">
-      <v-container fluid class="lg-px-0">s
+      <v-container fluid class="lg-px-0"
+        >
         <h1 class="text-h1 mb-4">{{ $t("home.ExploreProducts") }}</h1>
         <p class="text-body-2 gray mb-7">
           Shop now for all your sexual wellness needs. Play away
@@ -190,7 +192,8 @@
           :settings="settings"
           :breakpoints="breakpoints"
         >
-          <template v-for="(product, index) in productList" :key="index">
+          <template v-for="(product, index) in this.productList" :key="index">
+        
             <div class="product-view">
               <div class="product-view-top">
                 <v-btn-toggle
@@ -214,6 +217,7 @@
                     v-if="product.featuredImage"
                     class="profile-view-img"
                     aspect-ratio="1"
+                    crossorigin={anonymous}
                   />
                 </router-link>
                 <span
@@ -304,8 +308,12 @@ export default {
         snapAlign: "center",
       },
       settingsThirdSlider: {
-        itemsToShow: 7,
+        itemsToShow: 5,
         snapAlign: "center",
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 2,
+        
       },
       constImg: constant.CLOUDFRONT_DESTINATION,
       breakpoints: {
@@ -381,9 +389,10 @@ export default {
     async getProductHandler() {
       try {
         const response = await services.Product.GET_PRODUCT();
-      
-              console.log(response.data,"response-product11")
+
+        console.log(response.data.featuredImage, "response-product11");
         this.productList = response.data.map((item) => {
+         
           if (item.WishLists.length > 0) {
             item.isWishlisted = 0;
           } else {
@@ -391,6 +400,8 @@ export default {
           }
           return item;
         });
+console.log( this.productList,"11111--->",response)
+      
       } catch (err) {
         console.log(err);
       }
@@ -398,7 +409,7 @@ export default {
     async getCategoryHandler() {
       try {
         const response = await services.Categories.GET_CATEGORY();
-        console.log(response,'response111111')
+        console.log(response, "response111111");
         this.categoryList = response.data.map((item) => {
           return {
             ...item,
@@ -407,9 +418,7 @@ export default {
               .replace(/ /g, "-")
               .toLowerCase()}.jpg`,
           };
-          
         });
-    
       } catch (err) {
         console.log(err);
       }

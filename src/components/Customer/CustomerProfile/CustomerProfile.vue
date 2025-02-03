@@ -227,6 +227,7 @@
                     :defaultCountry="countryCodeIso"
                     :autoDefaultCountry="false"
                     :input="phoneNumber"
+                    
                     :value="phoneNumber"
                     v-model="phoneNumber"
                   ></vue-tel-input>
@@ -495,7 +496,9 @@ export default {
           ? JSON.parse(localStorage.getItem("user_Details")).id
           : null;
         const response = await services.UserDetail.GEt_USER_DETAIL(userId);
-        this.userDetail = response.data.UserDetail;
+
+      
+        this.userDetail = response.data.UserDetail&&response.data.UserDetail?response.data.UserDetail:"";
         this.userDetail.gAuth = response.data.gAuth;
         this.userDetail.gLogin = response?.data?.gLogin;
         if (response) {
@@ -505,7 +508,7 @@ export default {
           this.email = response.data.UserDetail.email;
           this.countryCode = response.data.UserDetail.countryCode;
           this.getCountryISO(response.data.UserDetail.countryCode);
-          this.phoneNumber = response.data.UserDetail.phoneNumber;
+          this.phoneNumber = response.data.UserDetail.phoneNumber||"";
         }
       } catch (err) {
         this.showAlert = true;
@@ -530,7 +533,7 @@ export default {
         data.countryCode = this.countryCode;
       }
       if (this.phoneNumber && this.phoneNumber != this.userDetail.phoneNumber) {
-        data.phoneNumber = this.phoneNumber;
+        data.phoneNumber = this.phoneNumber||"";
       }
       if (
         this.profileImage &&

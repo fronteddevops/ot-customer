@@ -1,46 +1,46 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 // customer pages
-import CustomerLogin from './components/auth/CustomerLogin.vue';
-import CustomerRegister from './components/auth/CustomerRegister.vue';
-import RegisterSent from './components/auth/RegisterSent.vue';
-import EmailVerified from './components/auth/EmailVerified.vue';
-import SetPassword from './components/auth/SetPassword.vue';
-import ForgotPassword from './components/auth/ForgotPassword.vue';
-import UpdatePassword from './components/auth/UpdatePassword.vue';
-import CustomerProfile from './components/Customer/CustomerProfile/CustomerProfile.vue';
-import Overview from './components/Customer/Overview/Overview.vue';
-import MyOrders from './components/Customer/MyOrders/MyOrders.vue';
-import OrderDetail from './components/Customer/MyOrders/OrderDetail/OrderDetail.vue';
-import AmbassdorDetail from './components/Customer/AmbassdorProfilePreview/AmbassdorDetail.vue';
-import Chat from './components/Customer/Chat/Chat.vue';
-import Subscriptions from './components/Customer/Subscriptions/Subscriptions.vue';
-import SubscriptionsDetail from './components/Customer/Subscriptions/SubscriptionsDetail.vue';
-import WishList from './components/Customer/WishList/WishList.vue';
+import CustomerLogin from "./components/auth/CustomerLogin.vue";
+import CustomerRegister from "./components/auth/CustomerRegister.vue";
+import RegisterSent from "./components/auth/RegisterSent.vue";
+import EmailVerified from "./components/auth/EmailVerified.vue";
+import SetPassword from "./components/auth/SetPassword.vue";
+import ForgotPassword from "./components/auth/ForgotPassword.vue";
+import UpdatePassword from "./components/auth/UpdatePassword.vue";
+import CustomerProfile from "./components/Customer/CustomerProfile/CustomerProfile.vue";
+import Overview from "./components/Customer/Overview/Overview.vue";
+import MyOrders from "./components/Customer/MyOrders/MyOrders.vue";
+import OrderDetail from "./components/Customer/MyOrders/OrderDetail/OrderDetail.vue";
+import AmbassdorDetail from "./components/Customer/AmbassdorProfilePreview/AmbassdorDetail.vue";
+import Chat from "./components/Customer/Chat/Chat.vue";
+import Subscriptions from "./components/Customer/Subscriptions/Subscriptions.vue";
+import SubscriptionsDetail from "./components/Customer/Subscriptions/SubscriptionsDetail.vue";
+import WishList from "./components/Customer/WishList/WishList.vue";
 
-import Ambassadors from './components/Customer/Ambassadors/Ambassadors.vue';
-import Product from './components/Customer/Product/Product.vue';
-import ProductDetail from './components/Customer/ProductDetail/ProductDetail.vue';
-import ThankYou from './components/Customer/ThankYou/ThankYou.vue';
-import ThankYouPost from './components/Customer/ThankYou/ThankYouPost.vue';
-import ThankYouCardAdded from './components/Customer/ThankYou/ThankYouCardAdded.vue';
-import Cart from './components/Customer/Cart/Cart.vue';
-import Checkout from './components/Customer/Checkout/Checkout.vue';
-import CheckoutPost from './components/Customer/Checkout/CheckoutPost.vue';
-import Subscription from './components/Customer/Subscription/Subscription.vue';
-import ErrorPage from './components/ErrorPage/ErrorPage.vue';
+import Ambassadors from "./components/Customer/Ambassadors/Ambassadors.vue";
+import Product from "./components/Customer/Product/Product.vue";
+import ProductDetail from "./components/Customer/ProductDetail/ProductDetail.vue";
+import ThankYou from "./components/Customer/ThankYou/ThankYou.vue";
+import ThankYouPost from "./components/Customer/ThankYou/ThankYouPost.vue";
+import ThankYouCardAdded from "./components/Customer/ThankYou/ThankYouCardAdded.vue";
+import Cart from "./components/Customer/Cart/Cart.vue";
+import Checkout from "./components/Customer/Checkout/Checkout.vue";
+import CheckoutPost from "./components/Customer/Checkout/CheckoutPost.vue";
+import Subscription from "./components/Customer/Subscription/Subscription.vue";
+import ErrorPage from "./components/ErrorPage/ErrorPage.vue";
 
 // front pages
 import HomePage from "./components/FrontPage/HomePage/HomePage.vue";
 import AboutUs from "./components/FrontPage/AboutUs/AboutUs.vue";
 import GetInTouch from "./components/FrontPage/GetInTouch/GetInTouch.vue";
 import TermCondition from "./components/FrontPage/TermCondition/TermCondition.vue";
-import PrivacyPolicy from './components/FrontPage/PrivacyPolicy/PrivacyPolicy.vue';
-import HelpCenter from './components/FrontPage/HelpCenter/HelpCenter.vue';
-import AffiliateProgram from './components/FrontPage/AffiliateProgram/AffiliateProgram.vue';
-import DeliveryInformation from './components/FrontPage/DeliveryInformation/DeliveryInformation.vue';
-import ReturnAndRefunds from './components/FrontPage/ReturnAndRefunds/ReturnAndRefunds.vue';
-import OrderTracking from './components/FrontPage/OrderTracking/OrderTracking.vue'
+import PrivacyPolicy from "./components/FrontPage/PrivacyPolicy/PrivacyPolicy.vue";
+import HelpCenter from "./components/FrontPage/HelpCenter/HelpCenter.vue";
+import AffiliateProgram from "./components/FrontPage/AffiliateProgram/AffiliateProgram.vue";
+import DeliveryInformation from "./components/FrontPage/DeliveryInformation/DeliveryInformation.vue";
+import ReturnAndRefunds from "./components/FrontPage/ReturnAndRefunds/ReturnAndRefunds.vue";
+import OrderTracking from "./components/FrontPage/OrderTracking/OrderTracking.vue";
 
 const routes = [
   // customer Ambassador onbording pages
@@ -133,7 +133,7 @@ const routes = [
   {
     name: "Products",
     path: "/products",
-    component: Product
+    component: Product,
   },
   {
     name: "Product Detail Page",
@@ -243,12 +243,33 @@ const router = createRouter({
 
 export default router;
 router.beforeEach((to, from, next) => {
-  if (to.path !== "/" && to.path !== "/forgot-password" && to.path !== "/login" && !to.path.includes("/product-detail") && !to.path.includes("/products") && to.path !== "/register" && to.path !== "/verify-email" && to.path !== "/cart" && to.path !== "/reset-password" && to.path !== "/play" && !to.path.includes("/play/") && !to.path.includes("/term-condition") && !to.path.includes("/privacy-policy") && !to.path.includes("/about-us") && !to.path.includes("/contact-us") && !to.path.includes("/order-tracking") && !to.path.includes("/affiliate-program") && !to.path.includes("/help-center") && !to.path.includes("/delivery-information") && !to.path.includes("/return-&-refunds")) {
+  if (
+    to.path !== "/" &&
+    to.path !== "/forgot-password" &&
+    to.path !== "/login" &&
+    !to.path.includes("/product-detail") &&
+    !to.path.includes("/products") &&
+    to.path !== "/register" &&
+    to.path !== "/verify-email" &&
+    to.path !== "/cart" &&
+    to.path !== "/reset-password" &&
+    to.path !== "/play" &&
+    !to.path.includes("/play/") &&
+    !to.path.includes("/term-condition") &&
+    !to.path.includes("/privacy-policy") &&
+    !to.path.includes("/about-us") &&
+    !to.path.includes("/contact-us") &&
+    !to.path.includes("/order-tracking") &&
+    !to.path.includes("/affiliate-program") &&
+    !to.path.includes("/help-center") &&
+    !to.path.includes("/delivery-information") &&
+    !to.path.includes("/return-&-refunds")
+  ) {
     const loggedIn = localStorage.getItem("access_token");
     if (!loggedIn) {
-      localStorage.removeItem('email');
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('user_Details');
+      localStorage.removeItem("email");
+      localStorage.removeItem("access_token");
+      localStorage.removeItem("user_Details");
       next("/");
     } else if (!to.matched.length) {
       // next("/pages/error-404");
@@ -260,15 +281,22 @@ router.beforeEach((to, from, next) => {
   next();
 });
 router.afterEach((to, from, next) => {
-    // Use next tick to handle router history correctly
-    // see: https://github.com/vuejs/vue-router/issues/914#issuecomment-384477609
-    console.log(to)
-    if(to.name == 'Product Detail Page'){
-      document.title = to.params.id.split('_')[1];
-    } else if(to.name == 'AmbassdorDetail') {
-      document.title = to.params.id.split('_')[1];
+  console.log(next, "next function");
+  console.log(to, "after-tooo-function");
+  if (typeof next === "function") {
+    const title = to.name;
+    if (title === "CustomerProfilePage" || title === "AmbassdorDetail") {
+   
+      const id = to.params.id
+        ? String(to.params.id.split("_")[1])
+        : "Default Title";
+      document.title = id;
     } else {
-      document.title = `Toys Store - ${to.name}`;
+      document.title = `Toys Store - ${title}`; 
     }
-    next()
+
+    next(); 
+  } else {
+    console.error("next is not a function");
+  }
 });

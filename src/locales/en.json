@@ -4,7 +4,7 @@
   "Werecommenda1024pxby1024pximageUploadimagehereinJPGPNGformat": "We recommend a 1024px by 1024px image. Upload image here in JPG/PNG format.",
   "Werecommendanimageatleast820pxwideand312pxtallUploadimagehereinJPGPNGformat": "We recommend an image at least 820px wide and 312px tall. Upload image here in JPG/PNG format.",
   "Werecommendavideoatleast914pxwideand608pxtallUploadvideohereinMP4WebPformat": "We recommend a video at least 914px wide and 608px tall. Upload video here in MP4/WebP format.",
-  "common": {    
+  "common": {
     "Forthecontactuspagepleaseput": "For the contact us page please put",
     "Sendusanmail": "Send us an mail",
     "SendMessage": "Send Message",
@@ -96,6 +96,7 @@
     "Hitthelinkintheemailwevesenttoverifyyouremailon": "Hit the link in the email we've sent to verify your email on",
     "Feed": "Feed",
     "Orders": "Orders",
+    "MyProfile": "  My Profile",
     "MyOrders": "My Orders",
     "Wishlist": "Wishlist",
     "Subscribed": "Subscribed",
@@ -140,7 +141,7 @@
     "SocialInfo": "Social Info",
     "Email": "Email",
     "Sex": "Sex",
-    "Sensual_Secrets":"Sensual Secrets",
+    "Sensual_Secrets": "Sensual Secrets",
     "Female": "Female",
     "Straight": "Straight",
     "Age": "Age",
@@ -377,6 +378,11 @@
     "rechargeableC": "Rechargeable C"
   },
   "home": {
+    "Toys": "Toys",
+
+    "Spark": "Spark",
+    "Imagination": "Imagination",
+
     "Where": "Where",
     "fantasy": "fantasy",
     "meetsReality": "meets reality",

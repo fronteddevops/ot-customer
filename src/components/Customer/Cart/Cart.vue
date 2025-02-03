@@ -77,8 +77,10 @@
                   <p class="text-body-2 mb-2">
                     {{ $t("cart.deliverTo") }}
                     <span class="text-body-2"
-                      >{{ primaryAddress.address.addressName }} |
-                      +{{ primaryAddress.address.country }} {{ primaryAddress.address.addressMobile }} <br />
+                      >{{ primaryAddress.address.addressName }} | +{{
+                        primaryAddress.address.country
+                      }}
+                      {{ primaryAddress.address.addressMobile }} <br />
                     </span>
                   </p>
                   <p class="text-body-3 text-body-address mb-0 w-75">
@@ -132,6 +134,7 @@
                           :src="`${constImg}${item.featuredImage}`"
                           aspect-ratio="1"
                           class="card-d-img"
+                          crossorigin="anonymous"
                         />
                       </router-link>
                     </div>
@@ -566,7 +569,7 @@
               </template>
             </v-text-field>
             <div class="custome-phone-box">
-          <vue-tel-input
+              <vue-tel-input
                 v-on:country-changed="
                   (e) => {
                     this.countryCode = e.dialCode;
@@ -586,7 +589,6 @@
                 defaultCountry="au"
                 :autoDefaultCountry="true"
               ></vue-tel-input>
-              
             </div>
             <p class="disable-head">{{ $t("cart.ShippingAddress") }}</p>
             <v-text-field
@@ -738,27 +740,28 @@
 
   <v-dialog v-model="dialogToggle" persistent max-width="290">
     <v-card>
-    <v-card-text>
-      <h5 class="text-h5"> Are you sure? </h5>
-        <p class="text-body-2 gray mb-4">You want to remove
-        <span class="text-pink"> {{ dialogProduct }}</span> from your
-        cart?</p>      
-      <div class="d-flex justify-end mb-3">
-        <v-spacer></v-spacer>
-        <v-btn class="btn-success-outline" @click="dialogToggle = false">
-          No
-        </v-btn>
-        <v-btn
-          class="v-btn bg-success ms-2"
-          @click="
-            removeCartItemHandler(dialogProductIndex);
-            dialogToggle = false;
-          "
-        >
-          Yes
-        </v-btn>
-      </div>
-    </v-card-text>
+      <v-card-text>
+        <h5 class="text-h5">Are you sure?</h5>
+        <p class="text-body-2 gray mb-4">
+          You want to remove
+          <span class="text-pink"> {{ dialogProduct }}</span> from your cart?
+        </p>
+        <div class="d-flex justify-end mb-3">
+          <v-spacer></v-spacer>
+          <v-btn class="btn-success-outline" @click="dialogToggle = false">
+            No
+          </v-btn>
+          <v-btn
+            class="v-btn bg-success ms-2"
+            @click="
+              removeCartItemHandler(dialogProductIndex);
+              dialogToggle = false;
+            "
+          >
+            Yes
+          </v-btn>
+        </div>
+      </v-card-text>
     </v-card>
   </v-dialog>
 </template>
@@ -776,7 +779,7 @@ export default {
   components: {
     CustomerHeader,
     Loader,
-    VueTelInput
+    VueTelInput,
   },
 
   data() {
@@ -848,8 +851,12 @@ export default {
   watch: {
     products: {
       handler: function () {
+        if (!this.cartDetails.cartDetail) {
+          this.cartDetails.cartDetail = {}; // Initialize cartDetail if undefined
+        }
         this.cartDetails.cartDetail.data = this.products;
         console.log("sddada", this.cartDetails.cartDetail);
+
         if (this.discountPercent) {
           this.cartDetails.totalAmount =
             this.products.reduce(
@@ -943,7 +950,7 @@ export default {
     },
   },
   methods: {
-        onSelect(number) {
+    onSelect(number) {
       if (typeof number == "string") {
         console.log(number, "findone");
         this.addressMobile = number;
@@ -984,6 +991,12 @@ export default {
     },
     async updateCartDetailsHandler() {
       if (localStorage.getItem("access_token")) {
+        if (!this.cartDetails) {
+          this.cartDetails = {};
+        }
+        if (!this.cartDetails.cartDetail) {
+          this.cartDetails.cartDetail = {};
+        }
         this.cartDetails.cartDetail.data = this.products;
         let cartData = this.cartDetails;
         delete cartData.id;
@@ -1002,6 +1015,7 @@ export default {
         console.log(response);
       } else {
         this.cartDetails.cartDetail.data = this.products;
+        console.log(this.products, "1111111122");
         if (this.products.length == 0) {
           localStorage.removeItem("cartData");
         } else {

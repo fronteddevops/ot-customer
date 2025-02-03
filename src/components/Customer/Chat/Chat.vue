@@ -167,7 +167,7 @@ import moment from "moment";
 // eslint-disable-next-line
 const firebaseApp = initializeApp(getFirebaseConfig());
 const db = getFirestore(firebaseApp);
-
+console.log(db,"db--->")
 export default {
   name: "ChatPage",
 
@@ -275,30 +275,38 @@ export default {
       }
     },
     // Saves a new message to Cloud Firestore.
-    async saveMessage() {
-      if (this.message && this.message.trim().length) {
-        // Add a new message entry to the Firebase database.
-        let selfId = localStorage.getItem("user_Details")
-          ? JSON.parse(localStorage.getItem("user_Details")).id
-          : null;
-        const messageText = this.message;
-        this.message = "";
-        try {
-          await addDoc(collection(getFirestore(), this.selectedChat), {
-            selfId,
-            userId: this.selectedUserId,
-            text: messageText,
-            createdAt: new Date(),
-          });
-        } catch (error) {
-          console.error(
-            "Error writing new message to Firebase Database",
-            error
-          );
-        }
-      }
-    },
+ async saveMessage() {
+  if (this.message && this.message.trim().length) {
+    let selfId = localStorage.getItem("user_Details")
+      ? JSON.parse(localStorage.getItem("user_Details")).id
+      : null;
+    const messageText = this.message;
+    this.message = "";
+
+    // Ensure that selectedChat is not empty or undefined
+    if (!this.selectedChat) {
+      console.error("Selected chat path is missing");
+      return; // Exit early if there's no valid chat path
+    }
+
+    try {
+      await addDoc(collection(getFirestore(), this.selectedChat), {
+        selfId,
+        userId: this.selectedUserId,
+        text: messageText,
+        createdAt: new Date(),
+      });
+    } catch (error) {
+      console.error("Error writing new message to Firebase Database", error);
+    }
+  }
+},
     loadMessages(id) {
+
+     if (!id) {
+    console.error("Chat ID is missing",id);
+    return; // Exit early if there's no valid chat ID
+  }
       const recentMessagesQuery = query(
         collection(getFirestore(), id),
         orderBy("createdAt", "asc")

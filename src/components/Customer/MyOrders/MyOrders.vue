@@ -314,6 +314,7 @@ export default {
       }
       let query = new URLSearchParams(filterData).toString();
       const response = await services.Product.GET_ORDER_LISTING(query);
+      console.log(response,"responseresponse")
       this.isLoading = false;
       console.log(response.data);
       this.orderList = response.data;
