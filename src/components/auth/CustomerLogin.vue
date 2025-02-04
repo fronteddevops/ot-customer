@@ -17,7 +17,7 @@
         <div class="text-center">
           <v-img
             class="logo-icon"
-            :src="require('../../assets/images/logo/Obetina.jpg')"
+            :src="require('../../assets/images/structure/logo.png')"
           />
           <h3 class="text-h3 italic mb-6">
             {{ $t("onboarding.signInToYourAccount") }}
@@ -116,7 +116,7 @@
       <v-img
         class="left-side-img"
         cover
-        :src="require('../../assets/images/structure/register-lady-img.png')"
+        :src="require('../../assets/images/structure/login.webp')"
       />
     </div>
   </div>

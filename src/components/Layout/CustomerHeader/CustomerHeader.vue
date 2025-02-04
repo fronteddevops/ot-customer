@@ -11,7 +11,7 @@
       </span>
       <router-link to="/">
         <v-img
-          :src="require('../../../assets/images/logo/Obetina.jpg')"
+          :src="require('../../../assets/images/structure/logo.png')"
           class="logo-icon"
         />
       </router-link>
@@ -85,7 +85,7 @@
               </div>
               <v-img
                 :src="
-                  require('../../../assets/images/structure/register-lady-img4.png')
+                  require('../../../assets/images/structure/register-lady-img.jpg')
                 "
                 cover
                 class="custome-droup-right-img"
@@ -128,7 +128,7 @@
           <v-text-field
             density="compact"
             variant="solo"
-            label="Search products, ambassadors"
+            label="Search products"
             prepend-inner-icon="mdi-magnify"
             single-line
             hide-details

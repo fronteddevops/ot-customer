@@ -317,6 +317,7 @@
     position: relative;
     height: 216px;
     overflow: hidden;
+    width: max-content;
 
     .product-view-top-img-box {
       position: relative;
@@ -373,7 +374,7 @@
 
         .mdi-heart-outline {
           display: block;
-          color: #717972;
+          color: #ffffff;
         }
 
         .mdi-heart {
@@ -1112,6 +1113,7 @@
 
         .v-label {
           margin-left: 8px;
+          width: max-content;
         }
       }
 
@@ -2969,7 +2971,7 @@
 }
 
 .term-sec1 {
-  background: url("../images/structure/home-banner1.png") no-repeat;
+  background: url("../images/structure/home-banner.jpg") no-repeat;
   background-color: #000000;
   background-position: center;
   background-size: cover;
@@ -2984,7 +2986,7 @@
   }
 
   .text-h1 {
-    color: white;
+    color: rgb(7, 6, 6);
     font-size: 45px !important;
   }
 }

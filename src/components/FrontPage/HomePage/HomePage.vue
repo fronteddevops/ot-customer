@@ -66,9 +66,7 @@
             <div class="cards-sec2">
               <div class="img-box">
                 <v-img
-                  :src="
-                    require('../../../assets/images/structure/toys_product.jpg')
-                  "
+                   src="https://www.skiphop.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw4b9c1d95/productimages/9M807910_1.jpg?sw=140&sh=175"
                   class="card-img"
                 />
               </div>

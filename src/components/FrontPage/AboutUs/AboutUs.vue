@@ -16,9 +16,9 @@
         <v-row>
           <v-col cols="12" sm="12" md="6" lg="6" xl="6">
             <div class="about-sec-img-box">
-              <video class="about-sec2-img" width="280" height="500" controls autoplay="true" :poster="require('../../../assets/images/structure/home-card2.png')">
+              <!-- <video class="about-sec2-img" width="280" height="500" controls autoplay="true" :poster="require('../../../assets/images/structure/home-card2.png')">
                 <source :src="require('../../../assets/images/structure/about-sec2.mp4')" type="video/mp4" />
-              </video>
+              </video> -->
             </div>
           </v-col>
           <v-col cols="12" sm="12" md="6" lg="6" xl="6">
@@ -51,7 +51,7 @@
           <v-col cols="12" sm="12" md="6" lg="7" xl="7">
             <v-img
               :src="
-                require('../../../assets/images/structure/about-sec3-img.png')
+                require('../../../assets/images/structure/about-sec3.jpg')
               "
               class="about-sec3-img"
             />

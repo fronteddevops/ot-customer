@@ -15,7 +15,7 @@
     <v-container>
       <div class="footer-top">
         <v-img
-          :src="require('../../../assets/images/structure/footer-img.png')"
+          :src="require('../../../assets/images/structure/footer.jpg')"
           class="footer-top-img"
         />
         <div class="relative">
@@ -56,7 +56,7 @@
         <v-row>
           <v-col cols="12" sm="12" md="5" lg="5" xl="5">
             <v-img
-              :src="require('../../../assets/images/logo/Obetina.jpg')"
+              :src="require('../../../assets/images/structure/logo.png')"
               class="footer-logo"
             />
             <p class="text-body-1 mb-6 mt-4">

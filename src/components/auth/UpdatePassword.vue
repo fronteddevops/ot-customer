@@ -3,7 +3,7 @@
     <div class="left-side">
         <v-form ref="form">  
             <div class="text-center">
-                <v-img class="logo-icon" :src="require('../../assets/images/logo/Obetina.jpg')" />
+                <v-img class="logo-icon" :src="require('../../assets/images/structure/logo.png')" />
                 <h3 class="text-h3 italic mb-8">{{ $t('onboarding.Updateyourpassword') }}</h3>
             </div>
             
@@ -58,7 +58,7 @@
         </v-form> 
     </div>
     <div class="right-side">
-        <v-img class="left-side-img" cover :src="require('../../assets/images/structure/register-lady-img4.png')" />
+        <v-img class="left-side-img" cover :src="require('../../assets/images/structure/register-lady-img.jpg')" />
     </div>
 </div>
 </template>

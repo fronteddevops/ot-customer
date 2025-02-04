@@ -64,9 +64,9 @@
                     hide-details
                     class="mb-3"
                   ></v-checkbox>
-                  <!-- <span v-if="subSubCategoryList.length > 5" class="more-data"
+                  <span v-if="subSubCategoryList.length > 5" class="more-data"
                     >+5 {{ $t("common.more") }}</span
-                  > -->
+                  >
                 </v-expansion-panel-text>
               </v-expansion-panel>
             </v-expansion-panels>

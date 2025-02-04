@@ -47,7 +47,7 @@
       <v-img
         class="left-side-img"
         cover
-        :src="require('../../assets/images/structure/register-lady-img6.png')"
+        src="https://cdn.pixabay.com/photo/2017/03/22/14/01/toys-2165123_1280.jpg"
       />
     </div>
   </div>

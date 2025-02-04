@@ -615,23 +615,22 @@
 
 // footer front css
 .footer-top {
-    padding: 40px 80px;
+    padding: 50px 0px;
     border-radius: 20px;
-    background: black;
+    background:#bbe9de;
     position: relative;
     overflow: hidden;
     margin-bottom: -130px;
-
+   
     @media (max-width: 767px) {
         padding: 20px 20px;
     }
 
     .footer-top-img {
         position: absolute;
-        right: -100px;
         top: 0px;
-        height: 454px;
-        width: 800px;
+        height: 100%;
+        width: 100%;
 
         @media (max-width: 576px) {
             display: none;
@@ -641,15 +640,16 @@
     .relative {
         position: relative;
         z-index: 1;
+        padding-left: 40px;
     }
 
     .text-h4 {
-        color: white;
+        color: black;
         font-family: 'satoshi-bold' !important;
     }
 
     .text-body-1 {
-        color: white;
+        color: black;
         font-family: 'satoshi-regular' !important;
     }
 

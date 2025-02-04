@@ -9,7 +9,7 @@
         <div class="text-center">
           <v-img
             class="logo-icon"
-            :src="require('../../assets/images/logo/Obetina.jpg')"
+            :src="require('../../assets/images/structure/logo.png')"
           />
           <h3 class="text-h3 italic mb-2">
            Forgot Password
@@ -62,7 +62,7 @@
       <v-img
         class="left-side-img"
         cover
-        :src="require('../../assets/images/structure/register-lady-img7.png')"
+        :src="require('../../assets/images/structure/forgotPassword1.jpg')"
       />
     </div>
   </div>
