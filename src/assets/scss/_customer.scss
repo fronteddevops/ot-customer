@@ -139,7 +139,7 @@
           .v-btn__content {
             .v-tab__slider {
               display: flex;
-              background: #ff179c;
+              background: #7731D8;
             }
           }
 
@@ -379,7 +379,7 @@
 
         .mdi-heart {
           display: none;
-          color: #ff179c;
+          color: #7731D8;
         }
 
         &.v-btn--active {
@@ -836,7 +836,7 @@
 
     .v-slide-group-item--active {
       .v-btn__content {
-        color: #ff179c;
+        color: #7731D8;
       }
     }
   }
@@ -845,7 +845,7 @@
     padding-top: 40px;
 
     .view-more {
-      color: #ff179c;
+      color: #7731D8;
       font-size: 14px;
       font-family: "SATOSHI-MEDIUM" !important;
       cursor: pointer;
@@ -890,7 +890,7 @@
 
     .text-h5 {
       &.pink {
-        color: #ff179c;
+        color: #7731D8;
       }
     }
   }
@@ -2387,7 +2387,7 @@
   height: 547px;
   border-radius: 20px;
   position: relative;
-  background: url("https://as2.ftcdn.net/v2/jpg/09/88/65/13/1000_F_988651328_m6E7pZJa4Kdsjxe3olIZAhLZZLjcZ0vp.jpg")
+  background: url("../images/structure/home.jpg")
     no-repeat;
   background-position: right;
   background-size: cover;

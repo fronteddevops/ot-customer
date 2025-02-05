@@ -3,6 +3,12 @@
 }
 
 // new input design
+
+.centered-label .v-field-label {
+    margin-top: 6px;
+    text-align: center !important;
+    justify-content: center;
+  }
 .v-input--density-default {
     position: relative;
 
@@ -903,7 +909,7 @@
                     .v-btn__content {
                         .v-tab__slider {
                             display: flex;
-                            background: #FF179C;
+                            background: #7731D8;
                         }
                     }
 

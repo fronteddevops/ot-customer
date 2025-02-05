@@ -60,9 +60,8 @@
                             @click="onloadPage"
                             :to="`/products?category=${tab}&subcategory=${item.id}`"
                             class="text-body-2"
-                            >{{ item?.name }} 
-                            </router-link
-                          ></v-tab
+                            >{{ item?.name }}
+                          </router-link></v-tab
                         >
                       </v-tabs>
                       <v-window v-model="tabSub">
@@ -126,6 +125,7 @@
           @click="showMobileMenu = !showMobileMenu"
         >
           <v-text-field
+            class="centered-label"
             density="compact"
             variant="solo"
             label="Search products"
@@ -136,6 +136,7 @@
             @keydown.enter="searchHandler"
             @input="debounceSearch"
           ></v-text-field>
+
           <ul
             class="search-droup"
             v-if="
@@ -144,9 +145,11 @@
           >
             <li class="bg-blue-accent-1" v-if="productList.length">Products</li>
             <li v-for="(item, index) in productList" :key="index">
-              <router-link :to="`/product-detail/${item.id}_${item.title}`" target="_blank">{{
-                item.title
-              }}</router-link>
+              <router-link
+                :to="`/product-detail/${item.id}_${item.title}`"
+                target="_blank"
+                >{{ item.title }}</router-link
+              >
             </li>
             <li class="bg-blue-accent-1" v-if="ambassadorList.length">
               Ambassadors
@@ -440,7 +443,7 @@ export default {
       newPassword: "",
       confirmPassword: "",
       products: [],
-       debounce: null,
+      debounce: null,
       rules: {
         required: (value) => !!value || "Required.",
         min: (v) => v.length >= 8 || "Min 8 characters",
@@ -458,7 +461,7 @@ export default {
         ["Update", "mdi-update"],
         ["Delete", "mdi-delete"],
       ],
-      
+
       showMobileMenu: false,
     };
   },
@@ -471,7 +474,8 @@ export default {
       const userDetail = JSON.parse(localStorage.getItem("user_Details"));
       this.userName = `${userDetail?.name} ${userDetail?.lastName}`;
       this.isChangePassowrd = !userDetail?.gLogin;
-    }this.userDetail?.gLogin
+    }
+    this.userDetail?.gLogin;
     this.getCategoryHandler();
     this.getSubCategoryHandler(1);
     if (this.isUserLoggedIn) {
@@ -548,13 +552,12 @@ export default {
   },
   methods: {
     debounceSearch(event) {
-      clearTimeout(this.debounce)
+      clearTimeout(this.debounce);
       this.debounce = setTimeout(() => {
-        if(event.target.value)
-        this.getSearchedResult(event.target.value);
-      }, 600)
+        if (event.target.value) this.getSearchedResult(event.target.value);
+      }, 600);
     },
-     
+
     async getCartDetails() {
       this.isLoading = true;
       try {
@@ -660,7 +663,7 @@ export default {
           await services.SubSubCategory.GET_SUB_SUB_CATEGORY_BY_SUB_CATEGORY(
             id
           );
-          console.log(response,"sub-cate")
+        console.log(response, "sub-cate");
         this.subSubCategoryList = response.data;
       } catch (err) {
         console.log(err);
