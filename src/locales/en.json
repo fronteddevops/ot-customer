@@ -141,13 +141,11 @@
     "SocialInfo": "Social Info",
     "Email": "Email",
     "Sex": "Sex",
-    "Sensual_Secrets": "Sensual Secrets",
+    "Category": "Category",
     "Female": "Female",
     "Straight": "Straight",
     "Age": "Age",
-    "Orientation": "Orientation",
     "Bi_sexual": "Bi-sexual",
-    "Kink": "Kink",
     "yrs": "yrs",
     "Sub": "Sub",
     "Phone": "Phone",
@@ -302,7 +300,6 @@
     "Setyournewpasswordwithenteryouroldpassword": "Set your new password with enter your old password.",
     "Logout": "Logout",
     "Save": "Save",
-    "Kink": "Kink",
     "Writeamessage": "Write a message"
   },
   "subscriptionPlan": {

@@ -48,21 +48,21 @@
 
 .v-slider-thumb {
   touch-action: none;
-  color: #2563ea !important;
+  color: #D19C97 !important;
 }
 
 .v-slider-track__fill {
-  background-color: #2563ea !important;
+  background-color: #D19C97 !important;
 }
 
 .v-slider-track__background {
-  background-color: #bee9ff !important;
+  background-color: #f7e1d7 !important;
   opacity: 1 !important;
 }
 
 .product-right {
   .v-chip {
-    background: #e0f4ff !important;
+    background: #f7e1d7  !important;
     border-radius: 4px !important;
     color: #191c1a !important;
 
@@ -89,7 +89,7 @@
     }
 
     &.v-expansion-panel-title--active {
-      background-color: #e0f4ff;
+      background-color: #F7E1D7;
     }
   }
 
@@ -690,7 +690,7 @@
 
     .carousel__prev,
     .carousel__next {
-      background: #ff179c;
+      background: #7731d8 ;
       border-radius: 50%;
       width: 20px;
       height: 20px;
@@ -938,7 +938,7 @@
       }
 
       &.pink {
-        color: #ff179c;
+        color: #9d4edd;
         cursor: pointer;
       }
     }
@@ -984,10 +984,10 @@
 
       .v-field {
         box-shadow: none;
-        border: 1px solid #e0f4ff;
+        border: 1px solid #f7e1d7;
         height: 36px;
         padding-right: 0px;
-        background: #e0f4ff;
+        background: #f7e1d7;
         border-radius: 4px;
 
         .v-label.v-field-label {
@@ -1108,7 +1108,7 @@
 
       .v-checkbox-btn {
         .mdi-checkbox-marked {
-          color: #2563ea;
+          color: #7731D8;
         }
 
         .v-label {
@@ -1126,7 +1126,7 @@
 
         .text-body-2 {
           font-family: "SATOSHI-BOLD" !important;
-          color: #ff179c;
+          color: #000000;
         }
       }
 
@@ -1204,7 +1204,7 @@
         margin: 16px 0px 8px 0px;
 
         .v-chip {
-          background: #e0f4ff !important;
+          background: #f7e1d7 !important;
           color: #191c1a !important;
           margin-bottom: 12px;
           margin-right: 12px;
@@ -2558,7 +2558,7 @@
     margin: 0px;
 
     .carousel__icon {
-      background: hsl(326, 100%, 55%) !important;
+      background:#7731D8  !important;
       color: #ffffff;
       border-radius: 50%;
       min-width: 36px;
@@ -2624,7 +2624,7 @@
 
     .carousel__prev,
     .carousel__next {
-      background: #ff179c;
+      background:#7731d8 ;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -2700,7 +2700,7 @@
 
   .carousel__prev,
   .carousel__next {
-    background: #ff179c;
+    background: #7731d8 ;
     border-radius: 50%;
     width: 40px;
     height: 40px;

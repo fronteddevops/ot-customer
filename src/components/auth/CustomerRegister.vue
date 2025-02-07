@@ -24,30 +24,10 @@
           </h3>
         </div>
         <!-- <p class="text-body-2 gray mb-2">{{ $t("onboarding.Signupwith") }}</p> -->
-        <div class="align-content-center justify-space-between mb-8">
-          <GoogleLogin
-            :callback="callback"
-            prompt
-            id="googleLogin"
-            style="opacity: 0; position: absolute; width: 100%"
-          />
-          <label for="googleLogin" class="social-btn w-100">
-            <v-img
-              class="icon24"
-              :src="require('../../assets/images/social/google-icon.svg')"
-            />{{ $t("Google") }}
-          </label>
-
-          <!-- <GoogleLogin :callback="callback" prompt class="social-btn w-100">
-            <v-img
-              class="icon24"
-              :src="require('../../assets/images/social/google-icon.svg')"
-            />{{ $t("Google") }}
-          </GoogleLogin> -->
-        </div>
-        <div class="or-div">
+        
+        <!-- <div class="or-div">
           <span>{{ $t("onboarding.orresigteryourself") }}</span>
-        </div>
+        </div> -->
         <v-row class="pt-3">
           <v-col cols="12" sm="6" md="6" class="py-0">
             <v-text-field
@@ -176,7 +156,7 @@
       </v-form>
       <p class="bottom-fixed-text">
         {{ $t("onboarding.Alreadyhaveanaccount?") }}
-        <router-link to="/login" class="blue pointer">
+        <router-link to="/login" class="text-[#7731D8] pointer">
           {{ $t("onboarding.SignIn") }}
         </router-link>
       </p>

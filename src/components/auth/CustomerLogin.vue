@@ -23,41 +23,6 @@
             {{ $t("onboarding.signInToYourAccount") }}
           </h3>
         </div>
-
-        <div class="align-content-center justify-space-between mb-8">
-          <!-- <VFacebookLogin
-            app-id="820340785897341"
-            @login="handleLogin"
-            class="social-btn"
-          >
-            <v-img
-              class="icon24"
-              :src="require('../../assets/images/social/facebook-icon.svg')"
-            />{{ $t("Facebook") }}
-          </VFacebookLogin> -->
-          <GoogleLogin
-            :callback="callback"
-            prompt
-            id="googleLogin"
-            style="opacity: 0; position: absolute; width: 100%"
-          />
-          <label for="googleLogin" class="social-btn w-100">
-            <v-img
-              class="icon24"
-              :src="require('../../assets/images/social/google-icon.svg')"
-            />{{ $t("Google") }}
-          </label>
-          <!-- <GoogleLogin :callback="callback" prompt class="social-btn w-100">
-            <v-img
-              class="icon24"
-              :src="require('../../assets/images/social/google-icon.svg')"
-            />{{ $t("Google") }}
-          </GoogleLogin> -->
-        </div>
-        <div class="or-div">
-          <span>{{ $t("onboarding.orContinueWith") }}</span>
-        </div>
-
         <v-row class="pt-3">
           <v-col cols="12" sm="12" md="12" class="py-0">
             <v-text-field
@@ -107,7 +72,7 @@
       </v-form>
       <p class="bottom-fixed-text">
         {{ $t("onboarding.Donthaveanaccount?") }}
-        <router-link to="/register" class="blue pointer">
+        <router-link to="/register" class="text-[#7731D8] pointer">
           {{ $t("onboarding.Register") }}
         </router-link>
       </p>

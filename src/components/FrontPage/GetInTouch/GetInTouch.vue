@@ -67,32 +67,32 @@
             <h6 class="text-h6">{{ $t("common.Followus") }}</h6>
             <div class="social-box">
               <a
-                href="https://twitter.com/_obeytina?t=n-fO9H--6VmitHw9m7Cprw&s=09"
+                href="#"
                 target="_blank"
               >
                 <v-img
-                  :src="
-                    require('../../../assets/images/social/twitter-icon.svg')
+                :src="
+                    require('../../../assets/images/social/twitter-vector.svg')
                   "
                   class="icon36"
               /></a>
               <a
-                href="https://instagram.com/_obeytina?igshid=ZDdkNTZiNTM="
+                href="#"
                 target="_blank"
               >
                 <v-img
-                  :src="
-                    require('../../../assets/images/social/facebook-icon.svg')
+                :src="
+                    require('../../../assets/images/social/facebook-vector.svg')
                   "
                   class="icon36"
               /></a>
 
               <a
-                href="https://instagram.com/_obeytina?igshid=ZDdkNTZiNTM="
+                href="#"
                 target="_blank"
                 ><v-img
-                  :src="
-                    require('../../../assets/images/social/instagram-icon.svg')
+                :src="
+                    require('../../../assets/images/social/instagram-vector.svg')
                   "
                   class="icon36"
               /></a>

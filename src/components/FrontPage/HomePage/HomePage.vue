@@ -14,7 +14,7 @@
           </p>
           <v-btn
             to="/products"
-            color="success"
+            color="#9d4edd"
             type="button"
             size="large"
             width="140"
@@ -27,7 +27,7 @@
             type="button"
             size="large"
             class="btn-white-outline"
-            >{{ $t("home.ObeyTinaPlay") }}</v-btn
+            >Store</v-btn
           >
         </div>
       </section>
@@ -66,7 +66,7 @@
             <div class="cards-sec2">
               <div class="img-box">
                 <v-img
-                   src="https://www.skiphop.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw4b9c1d95/productimages/9M807910_1.jpg?sw=140&sh=175"
+                  src="https://www.skiphop.com/dw/image/v2/AAMK_PRD/on/demandware.static/-/Sites-carters_master_catalog/default/dw4b9c1d95/productimages/9M807910_1.jpg?sw=140&sh=175"
                   class="card-img"
                 />
               </div>
@@ -98,7 +98,6 @@
           class="sec3-row"
           :settings="settingsThirdSlider"
           :breakpoints="breakpointsThirdSlider"
-        
         >
           <template v-for="(category, index) in this.productList" :key="index">
             <Slide>
@@ -179,8 +178,7 @@
       </div>
     </section>
     <section class="home-section5" v-if="productList.length > 0">
-      <v-container fluid class="lg-px-0"
-        >
+      <v-container fluid class="lg-px-0">
         <h1 class="text-h1 mb-4">{{ $t("home.ExploreProducts") }}</h1>
         <p class="text-body-2 gray mb-7">
           Shop now for all your sexual wellness needs. Play away
@@ -191,7 +189,6 @@
           :breakpoints="breakpoints"
         >
           <template v-for="(product, index) in this.productList" :key="index">
-        
             <div class="product-view">
               <div class="product-view-top">
                 <v-btn-toggle
@@ -215,7 +212,7 @@
                     v-if="product.featuredImage"
                     class="profile-view-img"
                     aspect-ratio="1"
-                    crossorigin={anonymous}
+                    crossorigin="{anonymous}"
                   />
                 </router-link>
                 <span
@@ -311,7 +308,6 @@ export default {
         centerMode: true,
         infinite: true,
         slidesToShow: 2,
-        
       },
       constImg: constant.CLOUDFRONT_DESTINATION,
       breakpoints: {
@@ -390,7 +386,6 @@ export default {
 
         console.log(response.data.featuredImage, "response-product11");
         this.productList = response.data.map((item) => {
-         
           if (item.WishLists.length > 0) {
             item.isWishlisted = 0;
           } else {
@@ -398,8 +393,7 @@ export default {
           }
           return item;
         });
-console.log( this.productList,"11111--->",response)
-      
+        console.log(this.productList, "11111--->", response.data);
       } catch (err) {
         console.log(err);
       }

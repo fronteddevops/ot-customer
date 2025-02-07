@@ -18,5 +18,4 @@ export default {
   GET_PRODUCT_AND_AMBASSADOR: (query) => `/search/all?${query}`,
   ORDER_SUCCESS: (id) => `/orders/success/${id}`
 
-
 }

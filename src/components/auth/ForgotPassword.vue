@@ -49,7 +49,7 @@
             </v-btn>
             <p class="text-body-2 mt-8 text-center">
               {{ $t("onboarding.Backto") }}
-              <router-link to="/login" class="blue pointer">{{
+              <router-link to="/login" class="text-[#7731D8] pointer">{{
                 $t("onboarding.SignIn")
               }}</router-link>
             </p>

@@ -82,18 +82,16 @@
                   </v-window>
                 </div>
               </div>
-              <v-img
+              <!-- <v-img
                 :src="
                   require('../../../assets/images/structure/register-lady-img.jpg')
                 "
                 cover
                 class="custome-droup-right-img"
-              />
+              /> -->
             </div>
           </v-menu>
-          <router-link to="/play" class="text-body-2 mx-8">{{
-            $t("common.ObeyTinaPlay")
-          }}</router-link>
+          <router-link  to="/products" class="text-body-2 mx-8">Products</router-link>
           <v-menu open-on-hover :close-on-content-click="false">
             <template v-slot:activator="{ props }">
               <v-btn v-bind="props" class="headerlarge-left-droup">{{
@@ -125,7 +123,7 @@
           @click="showMobileMenu = !showMobileMenu"
         >
           <v-text-field
-            class="centered-label"
+            class="centered-label "
             density="compact"
             variant="solo"
             label="Search products"
@@ -168,7 +166,7 @@
         </div>
         <div class="headerlarge-right">
           <router-link to="/cart" class="icon-plus-a">
-            <v-badge color="#2563EA" :content="products.length">
+            <v-badge color="#d19c97" :content="products.length">
               <v-img
                 :src="
                   require('../../../assets/images/structure/card-pink-icon.svg')

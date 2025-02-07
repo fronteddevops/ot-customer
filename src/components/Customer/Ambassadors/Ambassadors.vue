@@ -26,109 +26,29 @@
         <div class="px-50">
           <div class="p-l-head d-flex align-center mb-4">
             <v-img
-              :src="require('../../../assets/images/structure/sex-icon.svg')"
+              :src="require('../../../assets/images/structure/category.svg')"
               class="me-2 p-l-head-icon"
             />
-            <p class="text-body-2">{{ $t("common.Sensual_Secrets") }}</p>
+            <p class="text-body-2">{{ $t("common.Category") }}</p>
           </div>
-          <div class="">
-            <v-checkbox
-              label="Men"
-              v-model="selectedCheckGender"
-              value="Men"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Women"
-              v-model="selectedCheckGender"
-              value="Women"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Other"
-              v-model="selectedCheckGender"
-              value="Other"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="px-50">
-          <div class="p-l-head d-flex align-center mb-4">
-            <v-img
-              :src="
-                require('../../../assets/images/structure/orientation-icon.svg')
-              "
-              class="me-2 p-l-head-icon"
-            />
-            <p class="text-body-2">{{ $t("common.Orientation") }}</p>
-          </div>
-          <div class="">
-            <v-checkbox
-              label="Straight"
-              v-model="selectedCheckOrientation"
-              value="Straight"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Bi-sexual"
-              v-model="selectedCheckOrientation"
-              value="Bi-sexual"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Transexual"
-              v-model="selectedCheckOrientation"
-              value="Transexual"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Pansexual"
-              v-model="selectedCheckOrientation"
-              value="Pansexual"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="px-50">
-          <div class="p-l-head d-flex align-center mb-4">
-            <v-img
-              :src="require('../../../assets/images/structure/kink-icon.svg')"
-              class="me-2 p-l-head-icon"
-            />
-            <p class="text-body-2">{{ $t("common.Kink") }}</p>
-          </div>
-          <div class="">
-            <v-checkbox
-              label="Sub"
-              v-model="selectedCheckKink"
-              value="Sub"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Dom"
-              v-model="selectedCheckKink"
-              value="Dom"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-            <v-checkbox
-              label="Fluid"
-              v-model="selectedCheckKink"
-              value="Fluid"
-              hide-details
-              class="mb-3"
-            ></v-checkbox>
-          </div>
+          <v-container>
+            <v-virtual-scroll
+              :items="ambassadorsList"
+              height="300"
+              item-height="48"
+            >
+              <template v-slot:default="{ item }">
+                <v-checkbox
+                  :label="item.name"
+                  v-model="selectedCheckGender"
+                  :value="item.name"
+                  hide-details
+                  class="mb-3"
+                  @change="filterSubCategories"
+                ></v-checkbox>
+              </template>
+            </v-virtual-scroll>
+          </v-container>
         </div>
         <div class="divider"></div>
         <div class="px-50 pe-0">
@@ -145,7 +65,7 @@
               :max="max"
               :min="min"
               hide-details
-              class="align-left"
+              class=""
               v-on:mouseup="getAmbassadorsList"
               v-on:touchend="getAmbassadorsList"
             >
@@ -178,19 +98,6 @@
               @click="(e) => removeFilter(item, index, 'selectedCheckGender')"
             ></v-icon>
           </v-chip>
-          <v-chip
-            v-for="(item, index) in selectedCheckOrientation"
-            :key="index"
-          >
-            {{ item }}
-            <v-icon
-              end
-              icon="mdi-close"
-              @click="
-                (e) => removeFilter(item, index, 'selectedCheckOrientation')
-              "
-            ></v-icon>
-          </v-chip>
           <v-chip v-if="ageTo && ageFrom" :key="index">
             {{ ageFrom.toFixed(0) }}yrs - {{ ageTo.toFixed(0) }}yrs
             <v-icon
@@ -202,28 +109,86 @@
         </div>
         <div class="product-row">
           <div
-            class="product-view"
-            v-for="(item, index) in ambassadorsList"
+            v-for="(item, index) in productList"
             :key="index"
+            class="product-view"
+            v-infinite-scroll="loadMore"
+            infinite-scroll-disabled="busy"
+            infinite-scroll-distance="1"
           >
-            <router-link
-              :to="`/play/${item.id}_${item.UserDetail.desiredName}`"
-            >
-              <div class="p-r-prod-box">
-                <v-img
-                  :src="`${constImg}${item.UserDetail.profileImage}`"
-                  class="p-r-prod-box-img"
-                  cover
+            <div class="product-view-top">
+              <v-btn-toggle
+                v-model="item.isWishlisted"
+                class="heart-icon"
+                @click="addWishListHandler(item.id)"
+              >
+                <v-btn>
+                  <v-icon icon="mdi-heart"></v-icon>
+                  <v-icon icon="mdi-heart-outline"></v-icon>
+                </v-btn>
+              </v-btn-toggle>
+
+              <router-link
+                :to="`/product-detail/${item.id}_${item.title}`"
+                class="product-view-top-img-box"
+                target="_blank"
+              >
+                <img
+                  :src="`${constImg}${item.featuredImage}`"
+                  v-if="item.featuredImage"
+                  class="profile-view-img"
+                  aspect-ratio="1"
+                  crossorigin="anonymous"
                 />
-                <h5 class="text-h5">
-                  {{ item?.UserDetail?.name }} {{ item?.UserDetail?.lastName }}
-                </h5>
-                <p class="text-body-3">@{{ item.UserDetail?.desiredName }}</p>
+              </router-link>
+              <span
+                class="reting-view-chips"
+                v-if="
+                  item.ProductAverageRating.avgRating != 0 ||
+                  item.ProductAverageRating.reviewCount != 0
+                "
+              >
+                <v-icon start icon="mdi-star"></v-icon>
+                {{ transformNumber(item?.ProductAverageRating?.avgRating) }} |
+                {{ item.ProductAverageRating.reviewCount }}
+              </span>
+            </div>
+            <router-link
+              :to="`/product-detail/${item.id}_${item.title}`"
+              class="product-view-bottom-box"
+              target="_blank"
+            >
+              <p class="text-body-2 default">{{ item.title }}</p>
+              <!-- <p class="text-body-3">
+                {{ item.description }}
+              </p> -->
+              <div>
+                <span class="price-bold"
+                  >{{ $t("common.USD") }}
+                  {{
+                    item.discountedPrice != item.price
+                      ? item.discountedPrice
+                      : item.price
+                  }}</span
+                >
+                <span
+                  v-if="item.discountedPrice != item.price"
+                  class="price-underline"
+                  >{{  $t("common.USD")  }} {{ item.price }}</span
+                >
+                <span
+                  v-if="item.discountedPrice != item.price"
+                  class="price-offer"
+                  >({{
+                    (100 - (item.discountedPrice / item.price) * 100).toFixed(
+                      0
+                    )
+                  }}% off)</span
+                >
               </div>
             </router-link>
           </div>
         </div>
-        <!-- <v-progress-circular color="#2563EA" class="d-block my-4 mx-auto" indeterminate :size="48"></v-progress-circular>             -->
       </div>
     </div>
   </div>
@@ -264,24 +229,22 @@ export default {
       constImg: constant.CLOUDFRONT_DESTINATION,
       selectitems: ["A to Z", "Z to A", "New to Old", "Old to New"],
       sort: "",
+      ambassadorsList: [...Array(50).keys()].map((i) => ({
+        name: `Ambassador ${i + 1}`,
+      })),
       selectedCheckGender: [],
       selectedCheckOrientation: [],
       selectedCheckKink: [],
-      ambassadorsList: [],
       ageFrom: 0,
       ageTo: 0,
       sortOrder: "",
       sortBy: "",
+      subCategories: [],
+      filterCategory:[],
     };
   },
   watch: {
     selectedCheckGender() {
-      this.getAmbassadorsList();
-    },
-    selectedCheckOrientation() {
-      this.getAmbassadorsList();
-    },
-    selectedCheckKink() {
       this.getAmbassadorsList();
     },
     sort(val) {
@@ -310,6 +273,7 @@ export default {
   },
   mounted() {
     this.getAmbassadorsList();
+    this.getProductHandler();
   },
   methods: {
     removeFilter(item, index, type) {
@@ -319,16 +283,6 @@ export default {
         this.range[0] = 0;
         this.range[1] = 90;
         this.getAmbassadorsList();
-      } else if (type == "selectedCheckOrientation") {
-        let removeIndex;
-        let arr = this.selectedCheckOrientation;
-        this.selectedCheckOrientation.map((mainItem, mainIndex) => {
-          if (item == mainItem && mainIndex == index) {
-            removeIndex = mainIndex;
-          }
-        });
-        arr.splice(removeIndex, 1);
-        this.selectedCheckOrientation = [...arr];
       } else if (type == "selectedCheckGender") {
         let removeIndex;
         let arr = this.selectedCheckGender;
@@ -339,50 +293,63 @@ export default {
         });
         arr.splice(removeIndex, 1);
         this.selectedCheckGender = [...arr];
-      } else if (type == "selectedCheckKink") {
-        let removeIndex;
-        let arr = this.selectedCheckKink;
-        this.selectedCheckKink.map((mainItem, mainIndex) => {
-          if (item == mainItem && mainIndex == index) {
-            removeIndex = mainIndex;
-          }
-        });
-        arr.splice(removeIndex, 1);
-        this.selectedCheckKink = [...arr];
       } else {
         location.reload();
       }
     },
     async getAmbassadorsList() {
       this.isLoading = true;
-      let filterData = {};
-      if (this.selectedCheckGender.length > 0) {
-        filterData.gender = this.selectedCheckGender;
-      }
-      if (this.selectedCheckOrientation.length > 0) {
-        filterData.orientation = this.selectedCheckOrientation;
-      }
-      if (this.selectedCheckKink.length > 0) {
-        filterData.kink = this.selectedCheckKink;
-      }
-      if (this.ageFrom && this.ageTo) {
-        filterData.ageFrom = this.ageFrom;
-        filterData.ageTo = this.ageTo;
-      }
-      if (this.sortBy && this.sortOrder) {
-        filterData.sortOrder = this.sortOrder;
-        filterData.sortBy = this.sortBy;
-      }
-      let query = new URLSearchParams(filterData).toString();
       try {
-        const response = await services.Ambassadors.GET_AMBASSADORS(query);
+        const response = await services.Categories.GET_CATEGORY();
         this.ambassadorsList = response.data;
         this.isLoading = false;
-        console.log(response);
       } catch (error) {
         console.log(error);
+      }
+    },
+    async getProductHandler() {
+      try {
+        
+        const response = await services.Product.GET_PRODUCT();
+        console.log(response, "response---->");
+        this.productList = response.data.map((item) => {
+          console.log(this.productList, "response");
+          this.productImage = item.images.split(",");
+
+          this.isLoading = false;
+          if (item.WishLists.length > 0) {
+            item.isWishlisted = 0;
+          } else {
+            item.isWishlisted = 1;
+          }
+          return item;
+        });
+        // this.productList = response.data;
+        console.log(this.productList);
+        // this.productList.sort(function (a, b) {
+        //   return new Date(b.createdAt) - new Date(a.createdAt);
+        // });
+
+        console.log(response);
+      } catch (err) {
+        this.isLoading = false;
+        console.log(err);
       }
     },
   },
 };
 </script>
+<style scoped>
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.v-virtual-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.v-virtual-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+</style>
