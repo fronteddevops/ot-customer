@@ -16,9 +16,12 @@
         <v-row>
           <v-col cols="12" sm="12" md="6" lg="6" xl="6">
             <div class="about-sec-img-box">
-              <!-- <video class="about-sec2-img" width="280" height="500" controls autoplay="true" :poster="require('../../../assets/images/structure/home-card2.png')">
-                <source :src="require('../../../assets/images/structure/about-sec2.mp4')" type="video/mp4" />
-              </video> -->
+              <v-img
+              :src="
+                require('../../../assets/images/structure/toy.webp')
+              "
+              class="about-sec3-img"
+            />
             </div>
           </v-col>
           <v-col cols="12" sm="12" md="6" lg="6" xl="6">

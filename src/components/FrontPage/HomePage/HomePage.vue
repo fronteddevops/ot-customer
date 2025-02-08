@@ -6,7 +6,7 @@
         <div class="width350">
           <h1 class="text-h1 mb-5">
             {{ $t("home.Toys") }}
-            <span class="pink">{{ $t("home.Spark") }}</span>
+            <span >{{ $t("home.Spark") }}</span>
             {{ $t("home.Imagination") }}
           </h1>
           <p class="text-body-2 mb-12">
