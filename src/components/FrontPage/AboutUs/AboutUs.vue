@@ -28,17 +28,8 @@
             <div class="about-sec2-content">
               <h3 class="text-h3">{{ $t("common.ObeyTine") }}</h3>
               <p class="text-body-2">
-                Welcome to Toys Store. The World’s leading adult shop and content
-                creator platform. We are dedicated to providing a one-stop shop
-                for all your access to the hottest adult
-                stars worldwide. We empower content creators by allowing them to
-                interact with both the platform and shop and utilizing the shop
-                to benefit the type of content they create. As a customer, you
-                can easily shop for products and content in one convenient
-                ecosystem. Therefore, we strive to make your shopping experience
-                as seamless as possible. The Toys Store Team will continue
-                improving access and communication with customers and creators
-                through our platform.
+                Welcome to Toys Store. Our purpose is to help children discover the world around them in a safe, fun, and nurturing environment. We believe that playtime is a critical component of childhood, and we're committed to creating toys that promote positive development and growth in young minds.
+                From improving fine motor skills to building self-confidence and social skills, our toys are carefully crafted to provide children with the tools they need to thrive. We believe that every child deserves access to high-quality toys that encourage creativity, imagination, and learning.
               </p>
               <p class="text-body-2">
                 {{ $t("common.FollowTinaassheshowsyouherworld_about2") }}
@@ -68,10 +59,7 @@
                 }}
               </h3>
               <p class="text-body-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Our vision is to become the most trusted name in children's toys by providing high-quality, innovative, and sustainable products that promote positive development in young minds. We want to inspire children to dream big, explore fearlessly, and reach for the stars.
               </p>
             </div>
           </v-col>

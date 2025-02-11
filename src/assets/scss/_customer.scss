@@ -606,8 +606,8 @@
     }
 
     .carousel__icon {
-      color: #717972;
-      fill: #717972;
+      color: #7731D8;
+      fill: #7731D8;
     }
 
     .heart-icon {
@@ -743,7 +743,7 @@
       color: #717972;
 
       span.value-red {
-        color: #ff179c;
+        color: #7731D8;
         font-size: 14px;
         margin-left: 12px;
       }
@@ -792,7 +792,7 @@
   .deiling-info-box {
     padding: 15px 0;
     border-radius: 0.5rem;
-    background: #e0f4ff;
+    background: #F7E1D7;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -2391,7 +2391,7 @@
     no-repeat;
   background-position: right;
   background-size: cover;
-  padding: 116px 78px;
+  padding: 116px 65px;
 
   @media (max-width: 960px) {
     height: 400px;
@@ -2744,27 +2744,36 @@
   background: url("../images/structure/about-bg.webp") no-repeat;
   background-color: #000000;
   border-radius: 20px;
-    background-position: bottom;
+  background-position: bottom;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 350px;
   margin-top: 20px;
 
   .width350 {
     max-width: 350px;
+    height: 120px;
+    margin-top: 70px;
+    background: rgba(255, 255, 255, 0.6); /* Light transparent white background */
+    padding: 10px 20px; /* Add some padding */
+    border-radius: 8px; /* Optional: rounded corners */
+    backdrop-filter: blur(5px); /* Soft blur effect */
 
     .text-h1 {
       font-size: 44px !important;
       color: #000000;
       line-height: 55px;
-      margin-top: 70px;
+     
       margin-bottom: 16px;
-
+    
+    
       @media (max-width: 767px) {
         font-size: 32px !important;
         line-height: 40px;
+        padding: 8px 16px; /* Adjust padding for smaller screens */
       }
     }
+    
 
     .text-body-1 {
       color: #000000;
@@ -2814,6 +2823,7 @@
   }
 
   .about-sec2-content {
+    margin-top: 55px;
     padding-top: 65px;
     padding-left: 100px;
 
@@ -2877,14 +2887,14 @@
   }
 
   .about-sec3-content {
-    padding-right: 50px;
+    padding-right: 20px;
 
     @media (max-width: 1199px) {
       padding-right: 0px;
     }
 
     .text-h6 {
-      margin-top: 120px;
+      margin-top: 70px;
       font-family: "SATOSHI-BOLD" !important;
       margin-bottom: 12px;
 

@@ -21,8 +21,7 @@
           <div class="width350">
             <h1 class="text-h1">{{ $t("common.GetinTouch") }}</h1>
             <p class="text-body-1">
-              <!-- Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. -->
+              Contact us for support!
             </p>
           </div>
         </v-container>

@@ -179,7 +179,7 @@
             <v-btn
               to=""
               variant="outlined"
-              color="#FF179C"
+              color="#7731D8"
               size="large"
               width="180"
               @click="addCartHandler('redirect')"
@@ -229,11 +229,11 @@
             </div>
             <v-tabs v-model="tab" class="custome-tab">
               <v-tab value="Description">{{ $t("common.Description") }}</v-tab>
-              <v-tab value="VideoGuide">{{ $t("common.Video_&_Guide") }}</v-tab>
+              <!-- <v-tab value="VideoGuide">{{ $t("common.Video_&_Guide") }}</v-tab> -->
               <v-tab value="Reviews">{{ $t("common.Reviews") }}</v-tab>
-              <v-tab value="AmbassadorsReviews">{{
+              <!-- <v-tab value="Reviews">{{
                 $t("common.AmbassadorsReviews")
-              }}</v-tab>
+              }}</v-tab> -->
             </v-tabs>
 
             <v-window v-model="tab" class="product-detail-tab">

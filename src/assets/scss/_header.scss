@@ -5,6 +5,7 @@
     z-index: 99;
 
     .v-toolbar__content {
+        overflow-y: visible !important;
         width: 100%;
         max-width: 1140px;
         margin: auto;
@@ -250,7 +251,7 @@
 
     &.headerlarge {
         padding: 0px 50px;
-        overflow: visible;
+        overflow: visible !important;
 
         @media (max-width: 1199px) {
             padding: 0px 15px;
@@ -259,7 +260,7 @@
         .v-toolbar__content {
             max-width: 100%;
             padding: 0px 0px;
-
+            overflow: visible !important;
             .logo-icon {
                 width: 100px;
                 height: 60px;

@@ -21,14 +21,14 @@
             class="mr-4"
             >{{ $t("home.ShopAll") }}</v-btn
           >
-          <v-btn
+          <!-- <v-btn
             to="/play"
             variant="outlined"
             type="button"
             size="large"
             class="btn-white-outline"
             >Store</v-btn
-          >
+          > -->
         </div>
       </section>
     </v-container>
@@ -47,7 +47,7 @@
                   <p class="text-body-2 mb-10">
                     Get exclusive access to the hottest stars
                   </p>
-                  <router-link to="/play" class="blue">{{
+                  <router-link to="/products" class="blue">{{
                     $t("home.ViewAll")
                   }}</router-link>
                 </div>
@@ -74,7 +74,7 @@
                 <div class="relative">
                   <h4 class="text-h4 mb-3">{{ $t("home.Products") }}</h4>
                   <p class="text-body-2 mb-10">
-                    Shop now for all your sexual wellness needs. Play away
+                    The Unique Appeal Of Toy Time Toys & Games
                   </p>
                   <router-link to="/products" class="blue">{{
                     $t("home.ViewAll")
@@ -181,7 +181,7 @@
       <v-container fluid class="lg-px-0">
         <h1 class="text-h1 mb-4">{{ $t("home.ExploreProducts") }}</h1>
         <p class="text-body-2 gray mb-7">
-          Shop now for all your sexual wellness needs. Play away
+          Shop now for all your child favourites toys. Play away
         </p>
         <Carousel
           class="home-slider5"

@@ -4,10 +4,10 @@
             <v-img :src="require('../../../assets/images/structure/overview-icon.svg')" class="icon28" />
             <p class="text-body-2">{{ $t('common.Feed') }}</p>
         </router-link>
-        <router-link class="left-a" to="/chat">
+        <!-- <router-link class="left-a" to="/chat">
             <v-img :src="require('../../../assets/images/structure/overview-icon.svg')" class="icon28" />
             <p class="text-body-2">{{ $t('common.Chat') }}</p>
-        </router-link>
+        </router-link> -->
         
         <h6 class="text-h6">{{ $t('common.Orders') }}</h6>
         <router-link class="left-a " to="/orders">

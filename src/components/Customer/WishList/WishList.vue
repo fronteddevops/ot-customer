@@ -34,6 +34,7 @@
                   v-if="item.Product.featuredImage"
                   class="profile-view-img"
                   aspect-ratio="1"
+                  crossorigin="anonymous"
                 />
               </router-link>
               <span

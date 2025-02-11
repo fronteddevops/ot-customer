@@ -10,7 +10,7 @@
     <p class="text-body-2 gray text-center mb-5">
       <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. -->
     </p>
-    <router-link to="/play">
+    <router-link to="/products">
       <v-btn color="success" type="button" size="large" class="mt-5">
         Subscribe Now
       </v-btn>

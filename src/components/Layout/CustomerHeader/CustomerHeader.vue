@@ -129,14 +129,14 @@
             label="Search products"
             prepend-inner-icon="mdi-magnify"
             single-line
-            hide-details
+            
             v-model="searchValue"
             @keydown.enter="searchHandler"
             @input="debounceSearch"
           ></v-text-field>
 
           <ul
-            class="search-droup"
+            class="search-droup "
             v-if="
               searchValue && (productList.length || ambassadorList.length) > 0
             "
@@ -146,10 +146,11 @@
               <router-link
                 :to="`/product-detail/${item.id}_${item.title}`"
                 target="_blank"
-                >{{ item.title }}</router-link
+                class="w-100"
+                ><p>{{ item.title }}</p></router-link
               >
             </li>
-            <li class="bg-blue-accent-1" v-if="ambassadorList.length">
+            <!-- <li class="bg-blue-accent-1" v-if="ambassadorList.length">
               Ambassadors
             </li>
             <li v-for="(item, index) in ambassadorList" :key="index">
@@ -158,10 +159,10 @@
                 target="_blank"
                 >{{ item?.name + " " + item?.lastName }}</router-link
               >
-            </li>
+            </li> -->
           </ul>
           <ul class="search-droup" v-if="searchValue && isNotFound">
-            <li>No Product Or Ambassador Found</li>
+            <li>No Product Found</li>
           </ul>
         </div>
         <div class="headerlarge-right">

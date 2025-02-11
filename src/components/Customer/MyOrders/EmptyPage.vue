@@ -6,7 +6,11 @@
             <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. -->
 
         </p>
-        <v-btn color="success" type="button" size="large" class="mt-5">{{ $t('common.ShopNow') }}</v-btn>
+        <router-link to="/products">
+      <v-btn color="success" type="button" size="large" class="mt-5">
+        Shop Now
+      </v-btn>
+    </router-link>
   
     </div>
 </template>

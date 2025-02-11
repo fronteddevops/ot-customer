@@ -21,7 +21,7 @@
         <div class="relative">
           <h4 class="text-h4 mb-2">Sign up for emails</h4>
           <p class="text-body-1 mb-7">
-            Yes, I want to receive exclusive email offers and sexy advice from
+            Yes, I want to receive exclusive email offers and amazing product from
             Toys Store.
           </p>
           <div class="footer-input">
@@ -106,12 +106,13 @@
               <div class="footer-link-box">
                 <h5 class="text-h5">Category</h5>
                 <router-link
-                  v-for="(category, index) in categoryList"
+                  v-for="(category, index) in categoryList.slice(0, 5)"
                   :key="index"
                   :to="`/products?category=${category.id}`"
                   class="footer-link"
-                  >{{ category?.name }}</router-link
                 >
+                  {{ category?.name }}
+                </router-link>
               </div>
               <div class="footer-link-box">
                 <h5 class="text-h5">About</h5>
@@ -172,27 +173,29 @@
   </div>
   <v-dialog v-model="dialogToggle" persistent max-width="290">
     <v-card>
-        <v-card-text>
-        <h5 class="text-h5"> Are you sure? </h5>
-        <p class="text-body-2 gray mb-4">You want to subscribe our news letter with
-        <span class="text-pink"> {{ this.newsLetterEmail }}</span>
-        ?</p>      
-      <div class="d-flex justify-end mb-3">
-        <v-spacer></v-spacer>
-        <v-btn class="btn-success-outline" @click="dialogToggle = false">
-          No
-        </v-btn>
-        <v-btn
-          class="v-btn bg-success ms-2"
-          @click="
-            newsLetterSubscribeHandler();
-            dialogToggle = false;
-          "
-        >
-          Yes
-        </v-btn>
-      </div>
-    </v-card-text>
+      <v-card-text>
+        <h5 class="text-h5">Are you sure?</h5>
+        <p class="text-body-2 gray mb-4">
+          You want to subscribe our news letter with
+          <span class="text-pink"> {{ this.newsLetterEmail }}</span>
+          ?
+        </p>
+        <div class="d-flex justify-end mb-3">
+          <v-spacer></v-spacer>
+          <v-btn class="btn-success-outline" @click="dialogToggle = false">
+            No
+          </v-btn>
+          <v-btn
+            class="v-btn bg-success ms-2"
+            @click="
+              newsLetterSubscribeHandler();
+              dialogToggle = false;
+            "
+          >
+            Yes
+          </v-btn>
+        </div>
+      </v-card-text>
     </v-card>
   </v-dialog>
 </template>
