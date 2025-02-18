@@ -10,24 +10,26 @@
       <v-container>
         <h4 class="text-h4">Delivery information</h4>
         <p class="text-body-2">
-          At Toys Store, we want to make sure that you receive your products in a
-          timely and efficient manner. We offer a delivery tracking feature that
-          allows you to access your delivery information from your customer
-          profile. You can view the status of your order, estimated delivery
-          date, and track your package's journey from our warehouse to your
-          doorstep.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At deserunt
+          culpa modi iure vitae? Assumenda quaerat dolor optio! Quaerat saepe
+          recusandae vero, ab repellat et quidem dignissimos aperiam quis, minus
+          delectus iusto perferendis ullam corporis maiores! Repellendus,
+          laborum minima eum iusto dignissimos nam! Animi molestiae voluptatum
+          odit, error dicta quaerat?
         </p>
 
         <p class="text-body-2">
-          Additionally, we will keep you updated on the progress of your
-          delivery by sending you email notifications at each stage of the
-          delivery process. This includes confirmation of your order, when your
-          order has been dispatched from our warehouse, and when it's out
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          sapiente, facilis expedita fugiat praesentium totam dignissimos eos
+          esse sed? Corporis quo cum in odio libero pariatur vel corrupti vero
+          aliquid? Porro qui aspernatur veritatis eius minus enim eos rem
+          inventore asperiores nesciunt, aliquam, consectetur dignissimos!
         </p>
 
         <p class="text-body-2">
-          for delivery. This way, you can rest assured that your products are on
-          their way and will be delivered to you as soon as possible.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+          distinctio voluptatum fugit molestias iure, eveniet ducimus nisi? Ad
+          suscipit veritatis veniam tenetur hic incidunt tempora.
         </p>
 
         <!-- <h4 class="text-h4">

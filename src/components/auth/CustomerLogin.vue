@@ -98,8 +98,8 @@ export default {
   name: "CustomerLogin",
   data() {
     return {
-      email: "",
-      password: "",
+      email: "user@yopmail.com",
+      password: "user@123",
       show1: false,
       isValid: false,
       emailValid: false,
@@ -119,6 +119,12 @@ export default {
         emailMatch: () => `The email and password you entered don't match`,
       },
     };
+  },
+  mounted() {
+    // Validate prefilled data on page load
+    this.emailValid = this.validateEmail(this.email);
+    this.passValid = this.validatePassword(this.password);
+    this.checkValid();
   },
   watch: {
     email(val) {
@@ -144,12 +150,19 @@ export default {
     },
   },
   methods: {
+    validateEmail(email) {
+      return (
+        email &&
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          email
+        )
+      );
+    },
+    validatePassword(password) {
+      return password && password.length >= 8;
+    },
     checkValid() {
-      if (this.emailValid && this.passValid) {
-        this.isValid = true;
-      } else {
-        this.isValid = false;
-      }
+      this.isValid = this.emailValid && this.passValid;
     },
     handleLogin(response) {
       console.log("User Successfully Logged In", response);
@@ -215,7 +228,7 @@ export default {
             ) {
               this.$router.go(-1);
             } else {
-              this.$router.push("/profile");
+              this.$router.push("/");
             }
             localStorage.removeItem("cartData");
 
@@ -246,7 +259,6 @@ export default {
             let cartData = (await localStorage.getItem("cartData"))
               ? JSON.parse(localStorage.getItem("cartData"))
               : null;
-         
 
             if (cartData) {
               cartData.cartDetail.data = cartData.cartDetail.data.filter(
@@ -275,8 +287,7 @@ export default {
               ) {
                 this.$router.go(-1);
               } else {
-                this.$router.push("/profile");
-                
+                this.$router.push("/");
               }
               localStorage.removeItem("cartData");
 

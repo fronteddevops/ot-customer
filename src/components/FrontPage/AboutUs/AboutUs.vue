@@ -28,8 +28,7 @@
             <div class="about-sec2-content">
               <h3 class="text-h3">{{ $t("common.ObeyTine") }}</h3>
               <p class="text-body-2">
-                Welcome to Toys Store. Our purpose is to help children discover the world around them in a safe, fun, and nurturing environment. We believe that playtime is a critical component of childhood, and we're committed to creating toys that promote positive development and growth in young minds.
-                From improving fine motor skills to building self-confidence and social skills, our toys are carefully crafted to provide children with the tools they need to thrive. We believe that every child deserves access to high-quality toys that encourage creativity, imagination, and learning.
+                Welcome to Toys Store. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ex enim repellat alias saepe autem, libero ab explicabo accusantium ea cumque sed. Sequi molestiae delectus inventore minus qui, odit aliquid natus velit eveniet porro eligendi nisi cupiditate id tempora fugit necessitatibus eos doloremque enim ratione. Officiis molestiae id totam non. Quaerat, deleniti. Quam laboriosam esse unde tempore debitis, libero sunt doloremque amet? Fuga veniam minima qui quos nisi, consequuntur aliquam adipisci illo eos, cupiditate assumenda magni blanditiis impedit quam consequatur? Magni odio corrupti necessitatibus at illo porro eligendi doloremque maiores nostrum eos. Expedita sunt deleniti aspernatur officia reiciendis mollitia inventore.
               </p>
               <p class="text-body-2">
                 {{ $t("common.FollowTinaassheshowsyouherworld_about2") }}

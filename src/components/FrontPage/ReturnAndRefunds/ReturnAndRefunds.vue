@@ -10,24 +10,25 @@
       <v-container>
         <h4 class="text-h4">Returns and refunds</h4>
         <p class="text-body-2">
-          At Toys Store, we understand that sometimes you may need to return an
-          item. We have a returns policy to ensure that you have a hassle-free
-          experience in such situations.
+          At Toys Store, Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Repudiandae iste fugit dolor sint modi assumenda cum debitis?
+          Cumque sapiente repellendus, magnam ducimus facilis et culpa quisquam
+          dolorem numquam consequuntur corporis.
         </p>
 
         <p class="text-body-2">
-          Refunds: We will issue a refund if we are unable to deliver your item.
-          If the item you received is damaged, we will replace it for you, but
-          we do not issue refunds for damaged goods once they have been
-          delivered.
+          Refunds: Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          ad vel laborum ipsa ea similique culpa, voluptatem eligendi incidunt
+          id, consequuntur obcaecati quasi consectetur quibusdam ex adipisci
+          ullam sed est dolores harum. Repellendus, totam pariatur.
         </p>
 
         <p class="text-body-2">
-          Returns: If you wish to return an item for any other reason, please
-          contact our customer service team within 7 days of receiving your
-          order to initiate the return process. We will only accept returns that
-          are unused, in their original packaging, and in the same condition as
-          when they were received.
+          Returns: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Explicabo non quae assumenda. Nobis ipsa nesciunt incidunt, nisi non
+          praesentium sint veritatis laborum eum perspiciatis officia quibusdam
+          architecto illum repellendus reiciendis, voluptatem iusto ratione id
+          deserunt molestias fugit adipisci aliquam vitae!
         </p>
 
         <!-- <h4 class="text-h4">
@@ -35,15 +36,17 @@
           industry?
         </h4> -->
         <p class="text-body-2">
-          To return an item, you will be responsible for arranging and paying
-          for the shipping costs. Once we have received the item, we will
-          inspect it and process your refund if it meets the above requirements.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quae.
+          Labore ipsum hic ipsa deleniti inventore exercitationem accusamus
+          maiores quasi corrupti odit laboriosam ad earum commodi ut ex
+          architecto magni, a expedita sapiente nemo tempora!
         </p>
 
         <p class="text-body-2">
-          Please note that we reserve the right to refuse any returns that do
-          not meet our policy requirements. We also reserve the right to modify
-          this policy at any time.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto soluta
+          totam natus architecto enim nam eligendi voluptatibus, officia tempora
+          exercitationem odit fuga voluptate, iste ut? Magni, non. Blanditiis,
+          expedita cupiditate.
         </p>
 
         <p class="text-body-2">

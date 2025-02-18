@@ -102,7 +102,7 @@
             position: absolute;
             left: -15px;
             top: 70px;
-            background: #2563EA;
+            background: #7731D8;
             height: 43px;
             border-radius: 0 12px 12px 0;
             display: flex;
@@ -225,7 +225,7 @@
                                     }
 
                                     &:hover {
-                                        color: #2563EA;
+                                        color: #7731D8;
                                         font-family: 'SATOSHI-MEDIUM' !important;
                                         transition: ease-in-out 300ms;
                                         will-change: font-family;
@@ -243,7 +243,7 @@
             margin-left: 12px;
 
             .v-icon {
-                color: #2563EA;
+                color: #7731D8;
                 transform: rotate(180deg);
             }
         }
@@ -356,7 +356,7 @@
                                 }
                                 &.v-field--focused {
                                     background: transparent;
-                                    border: 1px solid #2563EA;
+                                    border: 1px solid #7731D8;
                                     transition: ease-in-out 300ms;
                                 }
 
@@ -558,7 +558,7 @@
     height: 40px;
     min-height: 40px;
     width: 100%;
-    background-color: #2563EA;
+    background-color: #7731D8;
     color: white;
     display: flex;
     align-items: center;

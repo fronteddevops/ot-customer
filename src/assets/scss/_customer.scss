@@ -805,7 +805,7 @@
     }
 
     .d-flex {
-      border-right: 1px solid #bee9ff;
+      border-right: 1px solid #D19C97;
       padding: 0px 20px;
       width: 33.33%;
 
@@ -1204,7 +1204,7 @@
         margin: 16px 0px 8px 0px;
 
         .v-chip {
-          background: #f7e1d7 !important;
+          background: #FFF1F1 !important;
           color: #191c1a !important;
           margin-bottom: 12px;
           margin-right: 12px;
@@ -1232,7 +1232,7 @@
           }
 
           .v-chip__underlay {
-            background: #e0f4ff !important;
+            background: #f4e1e2 !important;
           }
         }
       }
@@ -1375,7 +1375,7 @@
 
 .cart-holder {
   .diliveryto-block {
-    background: #ffd9e4;
+    background: #fff1f1;
     border-radius: 8px;
     padding: 25px 20px;
     align-items: center;
@@ -1423,7 +1423,7 @@
   }
 
   .head-text-pay {
-    color: #ff179c;
+    color: #7731D8;
     font-family: "SATOSHI-BOLD" !important;
   }
 
@@ -1434,7 +1434,7 @@
   }
 
   .diliveryinfo {
-    background: #e0f4ff;
+    background: #fff1f1;
     border-radius: 8px;
     padding: 20px;
 
@@ -1445,7 +1445,7 @@
     }
 
     .text-body-2 {
-      color: #2563ea;
+      color: #000000;
       font-family: "SATOSHI-BOLD" !important;
     }
 
@@ -1462,13 +1462,13 @@
   }
 
   .applycoupon {
-    background: #e0f4ff;
+    background: #fff1f1;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 
     .divider-blue {
-      border-bottom: 1px solid #bee9ff;
+      border-bottom: 1px solid #F7E1D7;
       margin: 20px auto;
     }
 
@@ -1615,7 +1615,7 @@
         }
 
         .counter-input {
-          background: #e0f4ff;
+          background: #F7E1D7;
           border-radius: 4px;
           width: 36px;
           height: 24px;
@@ -1661,7 +1661,7 @@
   min-height: 200px !important;
 
   .apply-text {
-    color: #ff179c;
+    color: #7731D8;
     font-family: "SATOSHI-MEDIUM" !important;
     position: absolute;
     right: 12px;
@@ -1693,10 +1693,10 @@
 
     .v-field {
       box-shadow: none;
-      border: 1px solid #e0f4ff;
+      border: 1px solid #F7E1D7;
       height: 36px;
       padding-right: 0px;
-      background: #e0f4ff;
+      background: #F7E1D7;
       border-radius: 4px;
 
       .v-label.v-field-label {
@@ -2356,13 +2356,13 @@
 
     &.active {
       .steps-count {
-        background: #2563ea;
+        background: #D19C97;
         color: white;
-        border: 1px solid #2563ea;
+        border: 1px solid #D19C97;
       }
 
       .steps-text {
-        color: #2563ea;
+        color: #D19C97;
       }
     }
   }

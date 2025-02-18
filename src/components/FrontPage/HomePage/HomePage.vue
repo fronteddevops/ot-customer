@@ -45,7 +45,7 @@
                 <div class="relative">
                   <h4 class="text-h4 mb-3">{{ $t("home.ObeyTinaPlay") }}</h4>
                   <p class="text-body-2 mb-10">
-                    Get exclusive access to the hottest stars
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dolore.
                   </p>
                   <router-link to="/products" class="blue">{{
                     $t("home.ViewAll")
@@ -74,7 +74,7 @@
                 <div class="relative">
                   <h4 class="text-h4 mb-3">{{ $t("home.Products") }}</h4>
                   <p class="text-body-2 mb-10">
-                    The Unique Appeal Of Toy Time Toys & Games
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dicta.
                   </p>
                   <router-link to="/products" class="blue">{{
                     $t("home.ViewAll")

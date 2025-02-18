@@ -10,100 +10,99 @@
       <v-container>
         <h4 class="text-h4">Affiliate Program</h4>
         <p class="text-body-2">
-          As a content creator on our platform, there are several ways to earn
-          money. One way is through our flat commission structure on
-          subscription totals, where you'll earn 90% of the total.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas
+          quidem incidunt vitae, velit hic est quisquam aut quos expedita nisi
+          natus reiciendis suscipit blanditiis corporis quia enim saepe quo.
         </p>
 
         <p class="text-body-2">
-          Another way to earn money is through toy sales. For every toy sold on
-          our platform, you can earn a commission. The commission rate depends
-          on the number of items sold:
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi
+          iusto sunt quia eos enim tenetur consequatur, temporibus dicta
+          doloremque!
         </p>
 
         <p class="text-body-2">
-          You can also earn money by engaging with our customers through toy
-          reviews. By writing reviews and listing your favorite products on your
-          profile, customers can purchase those products directly from you.
-          Additionally, you can share a personal discount code with your
-          subscribers that they can use to receive 10% off in our shop and earn
-          a commission on the product sale.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+          dignissimos quos necessitatibus eius nihil corporis velit quisquam
+          minima? Alias, soluta! Totam enim odit velit libero esse doloribus,
+          unde in magni explicabo facilis delectus laboriosam eaque officia
+          quaerat nostrum facere perspiciatis.
         </p>
 
         <p class="text-body-2">
-          Lastly, you can earn money by referring other content creators to our
-          platform. For every creator you refer and joins, you'll earn 2.5% of
-          their total subscription each month. And don't worry, the referred
-          creator will still receive their 90% commission.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          impedit debitis illo animi sunt et ipsam, velit dolor at hic modi
+          alias ea amet doloribus mollitia aliquid eos neque magnam nisi
+          ratione. Libero, voluptatibus sunt!
         </p>
 
         <p class="text-body-2">
-          Our publishing tools are designed to make creating and sharing content
-          on our platform easy and accessible for everyone. Whether you're a
-          beginner or an experienced creator, our tools provide the resources
-          you need to create high-quality content that resonates with your
-          audience.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+          assumenda quis corporis reiciendis. Eaque porro consequuntur earum,
+          necessitatibus veritatis, voluptatum nostrum, repellat illo suscipit
+          officiis recusandae ad accusamus? Tempora ullam error placeat
+          accusamus, ad rem ipsum est sit iste aliquid ex blanditiis sequi modi,
+          quasi quos similique? Voluptatem, nostrum enim.
         </p>
 
         <p class="text-body-2">
-          One of the key features of our platform is our AI integration. This
-          allows you to write scripts and create content faster and more
-          efficiently. Our AI integration can help you generate ideas, edit your
-          content and even write toy reviews, so you can focus on creating the
-          best content possible.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nemo
+          vitae! Vel, ab! Nisi ipsum, quod nihil esse similique accusamus
+          recusandae, culpa laborum labore ducimus qui explicabo quos iusto
+          cumque ex minus omnis eveniet corporis dolorem repudiandae molestiae
+          doloremque eligendi!
         </p>
 
         <p class="text-body-2">
-          Scheduling your content is also easy with our platform. Our calendar
-          tool allows you to plan out your content in advance, so you can focus
-          on creating and not worry about when to post.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque
+          aspernatur eaque sit est perferendis voluptas numquam sint ex,
+          sapiente esse tenetur eius, fuga labore, temporibus recusandae rerum
+          consequatur minus.
         </p>
 
         <p class="text-body-2">
-          Another great feature of our platform is the ability to receive
-          sponsored packages from the Toys Store Team. This allows you to review
-          and feature products on your profile, giving you another way to earn
-          income on our platform.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          veniam, aspernatur laudantium suscipit corrupti voluptatibus repellat.
+          Soluta, iure facere nisi corporis at reprehenderit et sed voluptatibus
+          perferendis optio facilis sapiente quibusdam illo error quod quae!
         </p>
 
         <p class="text-body-2">
-          Engaging with customers is an important part of creating content on
-          our platform. We provide tools and resources to help you communicate
-          with customers and build relationships with them. You can also use our
-          platform to market your profile on social media, helping you reach a
-          larger audience and grow your following.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          eum blanditiis voluptates. Cupiditate, sunt doloremque odio,
+          repudiandae eaque voluptates totam laborum alias nisi doloribus
+          suscipit animi maiores minus vel. Laboriosam placeat blanditiis quo
+          minus harum quam temporibus consequuntur illo. Doloremque maxime autem
+          exercitationem dolore consequuntur.
         </p>
 
         <p class="text-body-2">
-          Our platform is designed to empower creators and help them create the
-          best content possible. Sign up now and start creating content that
-          matters to you.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          esse neque dolor pariatur eligendi! Odit, commodi temporibus sed
+          laboriosam repellendus, reiciendis molestias earum illum perferendis
+          dolore modi quasi numquam voluptates?
         </p>
         <h4 class="text-h4">Communicating with our customers</h4>
 
         <p class="text-body-2">
-          As a content creator, it is essential to connect with your audience
-          and build a relationship with them. One of the best ways to do this is
-          through communication on our chat systems. By responding to messages,
-          you can create a sense of community and keep your subscribers engaged
-          with your content. Additionally, it's important to keep in mind that
-          your audience may have requests or questions related to products in
-          our shop. When this happens, it's a great opportunity to encourage
-          them to purchase through our shop, and remind them that by doing so,
-          they will be able to see the product being used by you. This is a
-          mutually beneficial way to connect with your audience and earn income
-          through the shop at the same time.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+          sit ipsa maiores minima perspiciatis temporibus repellat asperiores
+          dolorem, earum qui architecto soluta officiis nulla nam ullam delectus
+          animi cum reprehenderit, mollitia facere iure dignissimos totam
+          libero. Sit, maiores ex id veritatis assumenda ipsa officiis quos
+          quaerat consectetur cum neque aliquam! Eligendi ipsum sit eaque eos
+          ipsa soluta vel, maiores inventore?
         </p>
 
         <p class="text-body-2">
-          As a content creator, it's important to take full advantage of the
-          wide range of options available in our shop. With thousands of
-          costumes and lingerie to choose from, you have the ability to add some
-          variety to your content and keep it interesting for your audience.
-          Make sure to take the time to select the perfect items to use in your
-          videos and photos, to make sure that your content is captivating and
-          alluring. This will give your audience a reason to keep coming back
-          for more and also help you to increase the revenue from the shop.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eaque
+          voluptas error tempora hic et impedit, magni ad officiis earum eos
+          esse praesentium. Error, ratione velit! Officiis consequuntur neque
+          accusamus sed deleniti sit aliquid, eos iste ipsam nesciunt reiciendis
+          qui hic facilis, perspiciatis suscipit autem. Nihil ratione porro
+          fugiat enim ducimus facere sapiente deserunt, culpa veniam veritatis
+          quos sint ea, fugit quo cupiditate rerum optio officia tempora eveniet
+          corporis delectus.
         </p>
       </v-container>
     </section>

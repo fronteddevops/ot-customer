@@ -44,7 +44,7 @@
                 :src="require('../../../assets/images/structure/Call.svg')"
                 class="icon24"
               />
-              <p class="text-body-1">1300 </p>
+              <p class="text-body-1">999-9999-100</p>
             </div>
             <div class="d-flex">
               <v-img

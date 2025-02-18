@@ -64,7 +64,7 @@
             </p>
             <div class="social-row">
               <a
-                href="https://instagram.com/_abc?igshid=ZDdkNTZiNTM="
+                href="#"
                 target="_blank"
                 ><v-img
                   :src="
@@ -73,7 +73,7 @@
                   class="social-icon"
               /></a>
               <a
-                href="https://twitter.com/_abc?t=n-fO9H--6VmitHw9m7Cprw&s=09"
+                href="#"
                 target="_blank"
               >
                 <v-img
@@ -83,7 +83,7 @@
                   class="social-icon"
               /></a>
               <a
-                href="https://instagram.com/_abc?igshid=ZDdkNTZiNTM="
+                href="#"
                 target="_blank"
               >
                 <v-img
@@ -92,7 +92,7 @@
                   "
                   class="social-icon"
               /></a>
-              <a href="https://www.youtube.com/@_abc" target="_blank">
+              <a href="#" target="_blank">
                 <v-img
                   :src="
                     require('../../../assets/images/social/youtube-vector.svg')

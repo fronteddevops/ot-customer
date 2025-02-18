@@ -9,7 +9,7 @@
     <section class="term-sec2">
       <v-container>
         <h4 class="text-h4">Order Tracking</h4>
-        <p class="text-body-2">
+        <!-- <p class="text-body-2">
           At Toys Store, we understand that order tracking is important to our
           customers. To help you stay informed about the status of your order,
           we offer a convenient order tracking feature. Once you've placed your
@@ -20,19 +20,19 @@
           selected. If you have any questions or concerns about your order,
           please don't hesitate to contact our customer service team for
           assistance.
-        </p>
+        </p> -->
 
         <p class="text-body-2">
           Thank you for choosing Toys Store for your shopping needs.
         </p>
 
-        <!-- <p class="text-body-2">
+        <p class="text-body-2">
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced
           below for those interested. Sections 1.10.32 and 1.10.33 from "de
           Finibus Bonorum et Malorum" by Cicero are also reproduced in their
           exact original form, accompanied by English versions from the 1914
           translation by H. Rackham.
-        </p> -->
+        </p>
 
         <!-- <h4 class="text-h4">
           Thank you for choosing Toys Store for your shopping needs.
@@ -44,7 +44,7 @@
           scrambled it to make a type specimen book.
         </p> -->
 
-        <!-- <p class="text-body-2">
+        <p class="text-body-2">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor at
@@ -56,7 +56,7 @@
           Evil) by Cicero, written in 45 BC. This book is a treatise on the
           theory of ethics, very popular during the Renaissance. The first line
           of Lorem Ipsum,
-        </p> -->
+        </p>
 
         <!-- <p class="text-body-2">
           The standard chunk of Lorem Ipsum used since the 1500s is reproduced

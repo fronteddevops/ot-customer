@@ -12,23 +12,23 @@
           Help Center
         </h4>
         <p class="text-body-2">
-          Welcome to our Help Centre page! We are an online adult shop that provides a wide range of products and services to our valued customers. Our platform also includes a content creator platform where individuals can share their adult content.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam ullam id vel aut recusandae sunt rerum explicabo architecto minus quia saepe veniam, reprehenderit magni. Quaerat itaque veniam deleniti? Quae!
         </p>
 
         <p class="text-body-2">
-          We understand that navigating the world of adult products and services can be overwhelming at times, which is why our team is here to help. Whether you have questions about our products, shipping, or our content creator platform, our dedicated team of experts is here to assist you every step of the way.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur neque veniam modi placeat. Natus inventore quas doloremque dignissimos velit expedita, nobis libero maiores, soluta facilis eveniet odit consequuntur vero dolorem.
         </p>
 
         <p class="text-body-2">
-          Our goal is to provide a safe and comfortable environment for all our customers and content creators. We take great pride in ensuring that our products are of the highest quality and meet our strict standards. We are committed to providing exceptional customer service and making your shopping experience with us a positive one.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum iure quasi dolore sequi unde blanditiis fugit, voluptates doloremque? Odit, molestias. Expedita facere id eveniet labore illo et quam dolorum.
         </p>
 
         <p class="text-body-2">
-          If you have any questions or concerns, please do not hesitate to reach out to our support team. We are available 24/7 to answer any questions you may have and provide you with the assistance you need. You can reach us through our contact page, email, or phone.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit corrupti, adipisci quidem maxime neque consectetur molestiae minus similique rerum obcaecati maiores ipsam in at, dolores fuga dolore debitis eos architecto!
         </p>
 
         <p class="text-body-2">
-          Thank you for choosing our platform as your go-to source for adult products and services. We look forward to serving you!</p>
+          Thank you for choosing our platform . We look forward to serving you!</p>
       </v-container>
     </section>
 

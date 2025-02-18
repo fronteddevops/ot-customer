@@ -8,29 +8,31 @@
     </section>
     <section class="term-sec2">
         <v-container>   
-            <h4 class="text-h4">Privacy Policy for Adult Shop and Content Creator Platform:</h4>
-            <p class="text-body-2">At our platform, we take your privacy seriously. This privacy policy explains how we collect, use, and protect your personal information and any avatars created through our platform.</p>
+            <h4 class="text-h4">Privacy Policy Platform:</h4>
+            <p class="text-body-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ex ipsam fugit eius reprehenderit eligendi eveniet ea eaque doloribus nihil. Facilis dignissimos at vel eligendi.</p>
             <h6 class="text-h6">Information We Collect:</h6>
-            <p class="text-body-2">We collect personal information such as your name, email address, billing address, and payment information when you create an account or make a purchase on our platform. We may also collect information about your device, IP address, and browsing history.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore non aliquam magni cum quidem ducimus odit aliquid saepe accusamus? Eveniet nobis quam veniam rerum nihil animi, ab et, quia suscipit facilis exercitationem incidunt doloremque?</p>
             <h6 class="text-h6">Use of Information:</h6>
-            <p class="text-body-2">We use your personal information to provide you with our services, process your transactions, and communicate with you. We may also use your information to improve our platform, prevent fraud, and comply with legal obligations.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aspernatur corporis veniam debitis deleniti doloremque a optio velit. Ullam autem, iure qui libero id fugiat similique dolor sit vel voluptatem, repellendus fuga pariatur eveniet ratione.</p>
             <h6 class="text-h6">Ownership of Data:</h6>
-            <p class="text-body-2">You own your personal data, and we respect your ownership rights. We do not sell or rent your personal information to third parties without your consent.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore magni recusandae ut consequatur odit iste cumque! Porro sit ut tempora eum repellendus maiores! Aperiam ducimus eligendi iste fugit iure.</p>
             <h6 class="text-h6">Ownership of Avatars:</h6>
-            <p class="text-body-2">Any avatars created through our platform are the property of our platform and its licensors. You may use these avatars for personal purposes only and may not sell, rent, or transfer ownership of these avatars without our prior written consent.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nostrum corporis, libero esse reiciendis, consectetur reprehenderit, voluptates vero itaque facere officia quisquam eius sunt perspiciatis optio totam odit eaque blanditiis veniam ratione repellendus beatae sapiente.</p>
             <h6 class="text-h6">Third-Party Services:</h6>
-            <p class="text-body-2">We may use third-party services such as payment processors and analytics providers to assist us in providing our services. These third-party services may collect and use your personal information in accordance with their own privacy policies.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure blanditiis reiciendis et quidem unde optio exercitationem vel fuga rem omnis, at commodi sunt aliquid quam tempora officia amet consequatur?</p>
             <h6 class="text-h6">Data Security:</h6>
-            <p class="text-body-2">We take reasonable measures to protect your personal information and avatars from unauthorized access, use, and disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee the absolute security of your information.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, repudiandae. Hic deserunt, excepturi eaque distinctio inventore facilis. Assumenda consectetur ipsam tenetur. Fugiat quia corrupti ipsum iusto repellat veritatis consequuntur inventore.</p>
             <h6 class="text-h6">Cookies and Tracking Technologies:</h6>
-            <p class="text-body-2">We may use cookies and other tracking technologies to collect information about your browsing behavior and preferences. You can disable cookies in your browser settings, but this may limit your ability to use our platform.</p>
+            <p class="text-body-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo consectetur commodi nihil, cumque, aperiam, esse placeat deserunt dolores quasi unde ullam molestias voluptas repellat repellendus?</p>
             <h6 class="text-h6">Children's Privacy:</h6>
-            <p class="text-body-2">Our platform is not intended for children under the age of 18, and we do not knowingly collect personal information from children.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto possimus aut itaque consequuntur eaque laboriosam accusamus voluptatum ipsam commodi vitae.</p>
             <h6 class="text-h6">Changes to Policy:</h6>
-            <p class="text-body-2">We reserve the right to modify this privacy policy at any time. Any changes to this policy will be posted on our platform, and your continued use of our platform after such changes have been posted constitutes your acceptance of the new policy.</p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequatur illum facere molestias culpa fugit enim officia nemo deserunt magnam ut, sapiente eos voluptate iure expedita sequi ipsa hic ad error in cum voluptatibus cupiditate nihil adipisci. Quae, saepe iure.</p>
             <h6 class="text-h6">Contact Us:</h6>
-            <p class="text-body-2 mb-2">If you have any questions or concerns about this privacy policy or our privacy practices, please contact us at <router-link :to="`/`" class="underline-none">contact@toysstore.com</router-link></p>
-            <p class="text-body-2">We using our platform, you consent to the collection, use, and disclosure of your personal information and any avatars created through our platform in accordance with this privacy policy</p>  
+            <p class="text-body-2 mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione obcaecati temporibus vero libero quidem voluptas soluta quaerat iste maxime voluptatem, quis ipsam rem quam. Sint quibusdam voluptate dolorem in minus.
+               <!-- <router-link :to="`/`" class="underline-none">contact@toysstore.com</router-link> -->
+              </p>
+            <p class="text-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur deleniti soluta modi officiis quaerat harum porro in sit!</p>  
         </v-container>
     </section>
 
