@@ -99,7 +99,7 @@ export default {
   data() {
     return {
       email: "user@yopmail.com",
-      password: "user@123",
+      password: "User@123",
       show1: false,
       isValid: false,
       emailValid: false,
