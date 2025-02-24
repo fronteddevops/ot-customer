@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><title>Toys Store</title><script defer="defer" src="/js/chunk-vendors.08ee1b4f.js"></script><script defer="defer" src="/js/app.1902419a.js"></script><link href="/css/chunk-vendors.71c23119.css" rel="stylesheet"><link href="/css/app.174452b2.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but obey-tina doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><div id="error-message"></div><script src="https://unpkg.com/vue-infinite-scroll@2.0.2/vue-infinite-scroll.js"></script><script>document.addEventListener('contextmenu', event => event.preventDefault());</script><script>window.onload = function () {
+           document.addEventListener("contextmenu", function (e) {
+               e.preventDefault();
+           }, false);
+           document.addEventListener("keydown", function (e) {
+               //document.onkeydown = function(e) {
+               // "I" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                   disabledEvent(e);
+               }
+               // "J" key
+               if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                   disabledEvent(e);
+               }
+               // "S" key + macOS
+               if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                   disabledEvent(e);
+               }
+               // "U" key
+               if (e.ctrlKey && e.keyCode == 85) {
+                   disabledEvent(e);
+               }
+               // "F12" key
+               if (event.keyCode == 123) {
+                   disabledEvent(e);
+               }
+           }, false);
+           function disabledEvent(e) {
+               if (e.stopPropagation) {
+                   e.stopPropagation();
+               } else if (window.event) {
+                   window.event.cancelBubble = true;
+               }
+               e.preventDefault();
+               return false;
+           }
+       }</script></body></html>
